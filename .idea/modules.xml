@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/EngineDB.iml" filepath="$PROJECT_DIR$/EngineDB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/web-test-drive-py.iml" filepath="$PROJECT_DIR$/.idea/web-test-drive-py.iml" />
     </modules>
   </component>
 </project>
