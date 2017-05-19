@@ -2,572 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d491f2ca-3cda-489c-9e2e-7ae9e801cabd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_datastax_cassandra_cassandra_driver_core_shaded_3_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_datastax_dse_dse_java_driver_core_1_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_datastax_dse_dse_java_driver_mapping_1_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jnr_jffi_1_2_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jnr_jffi_native_1_2_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jnr_jnr_constants_0_9_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jnr_jnr_ffi_2_0_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jnr_jnr_posix_3_0_27.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jnr_jnr_x86asm_1_0_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_client_google_api_client_1_22_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_apis_google_api_services_compute_v1_rev147_1_22_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_jdk5_17_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_http_client_google_http_client_1_22_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_http_client_google_http_client_jackson2_1_22_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_oauth_client_google_oauth_client_1_22_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_9_9_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_0_37_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_0_37_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_0_37_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_0_37_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_0_37_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_2_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_analysis_5_0_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_commons_5_0_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_tree_5_0_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_util_5_0_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/socialDist/cassandra/Article.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/socialDist/cassandra/Comment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/socialDist/cassandra/Event.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/socialDist/cassandra/Message.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/cassandra.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/embedded-cassandra.yaml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/cassandra/main/CassandraApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/cassandra/model/Address.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/cassandra/model/Article.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/cassandra/model/Comment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/cassandra/model/Message.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/cassandra/model/PersonTmp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/cassandra/repository/ArticleRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/cassandra/repository/CommentRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/cassandra/repository/UserRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/repository/ArticleRepositoryIntegrationTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/repository/CassandraTemplateIntegrationTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/repository/CqlQueriesIntegrationTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/repository/QueryIntegrationTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/config/CassandraCqlClusterFactoryBeanUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/config/CassandraCqlSessionFactoryBeanUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/config/PoolingOptionsFactoryBeanUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/config/java/AbstractClusterConfigurationUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/config/xml/CassandraCqlClusterParserUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/config/xml/ParsingUtilsUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/AsyncCqlTemplateIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/AsyncCqlTemplateUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/CachedPreparedStatementCreatorUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/CqlTemplateIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/CqlTemplateUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/DefaultBridgedReactiveSessionIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/DefaultBridgedReactiveSessionUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/QueryOptionsUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/QueryOptionsUtilUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/ReactiveCqlTemplateIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/ReactiveCqlTemplateUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/SingleColumnRowMapperUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/WriteOptionsUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/cql/CqlIdentifierUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/cql/generator/AbstractIndexOperationCqlGeneratorTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/cql/generator/AbstractKeyspaceOperationCqlGeneratorTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/cql/generator/AbstractTableOperationCqlGeneratorTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/cql/generator/AlterKeyspaceCqlGeneratorUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/cql/generator/AlterTableCqlGeneratorIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/cql/generator/AlterTableCqlGeneratorUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/cql/generator/AlterUserTypeCqlGeneratorIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/cql/generator/AlterUserTypeCqlGeneratorUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/cql/generator/CreateIndexCqlGeneratorUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/cql/generator/CreateKeyspaceCqlGeneratorUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/cql/generator/CreateTableCqlGeneratorUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/cql/generator/CreateUserTypeCqlGeneratorIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/cql/generator/CreateUserTypeCqlGeneratorUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/cql/generator/DropIndexCqlGeneratorUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/cql/generator/DropKeyspaceCqlGeneratorUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/cql/generator/DropTableCqlGeneratorUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/cql/generator/DropUserTypeCqlGeneratorUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/keyspace/OptionUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/session/lookup/AbstractRoutingSessionFactoryUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/session/lookup/BeanFactorySessionFactoryLookupUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/session/lookup/MapSessionFactoryLookupUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/core/session/lookup/SingleSessionFactoryLookupUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/support/BeanDefinitionTestUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/support/CassandraAccessorUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/support/CassandraExceptionTranslatorUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/support/RandomKeySpaceName.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/AbstractEmbeddedCassandraIntegrationTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/AbstractKeyspaceCreatingIntegrationTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/CassandraRule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/EmbeddedCassandraServerHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/KeyspaceRule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/config/CassandraCqlClusterFactoryBeanIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/config/IntegrationTestUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/config/java/AbstractIntegrationTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/config/java/Config.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/config/java/ConfigIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/config/java/CqlTemplateConfigIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/config/java/KeyspaceCreatingJavaConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/config/java/KeyspaceCreatingJavaConfigIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/config/xml/FullySpecifiedKeyspaceCreatingXmlConfigIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/config/xml/MinimalKeyspaceCreatingXmlConfigIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/config/xml/MinimalXmlConfigIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/config/xml/PropertyPlaceholderNamespaceCreatingXmlConfigIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/config/xml/TestHostStateListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/config/xml/TestLatencyTracker.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/config/xml/XmlConfigIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/core/Book.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/core/BookListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/core/cql/generator/CqlIndexSpecificationAssertions.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/core/cql/generator/CqlKeyspaceSpecificationAssertions.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/core/cql/generator/CqlTableSpecificationAssertions.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/core/cql/generator/CreateIndexCqlGeneratorIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/core/cql/generator/CreateKeyspaceCqlGeneratorIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/core/cql/generator/CreateTableCqlGeneratorIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/core/cql/generator/IndexLifecycleCqlGeneratorIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/core/cql/generator/TableLifecycleIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/core/cql/generator/TableOptionsIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/support/AbstractTestJavaConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/support/CallbackSynchronizationSupport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/support/CassandraConnectionProperties.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/support/CassandraVersion.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/support/CqlDataSet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/cassandra/test/integration/support/IntegrationTestNettyOptions.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/RowMockUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/config/CassandraMappingBeanFactoryPostProcessorUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/config/CassandraSessionFactoryBeanUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/config/SchemaActionIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/config/xml/CassandraNamespaceIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/convert/CassandraTypeMappingIntegrationTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/convert/ColumnReaderUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/convert/CounterEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/convert/CurrencyConverter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/convert/CustomConversionIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/convert/MappingCassandraConverterUDTIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/convert/MappingCassandraConverterUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/convert/QueryMapperUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/convert/TimeEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/convert/UpdateMapperUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/core/AsyncCassandraTemplateIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/core/AsyncCassandraTemplateUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/core/CassandraAdminTemplateIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/core/CassandraBatchTemplateIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/core/CassandraPersistentEntitySchemaCreatorUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/core/CassandraPersistentEntitySchemaDropperUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/core/CassandraTemplateIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/core/CassandraTemplateUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/core/ReactiveCassandraTemplateIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/core/ReactiveCassandraTemplateUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/core/StatementFactoryUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/core/query/ColumnNameUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/core/query/ColumnsUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/core/query/CriteriaUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/core/query/QueryUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/core/query/UpdateUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/domain/AllPossibleTypes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/domain/CompositeKey.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/domain/FlatGroup.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/domain/Group.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/domain/GroupKey.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/domain/Person.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/domain/TypeWithCompositeKey.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/domain/TypeWithKeyClass.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/domain/TypeWithMapId.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/domain/UserToken.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/mapping/BasicCassandraMappingContextUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/mapping/BasicCassandraPersistentEntityMetadataVerifierUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/mapping/BasicCassandraPersistentEntityOrderPropertiesUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/mapping/BasicCassandraPersistentEntityUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/mapping/BasicCassandraPersistentPropertyUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/mapping/CassandraCompositePrimaryKeyUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/mapping/CassandraPersistentPropertyComparatorUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/mapping/CassandraPrimaryKeyColumnAnnotationComparatorUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/mapping/CassandraUserTypePersistentEntityUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/mapping/CompositeCassandraPersistentEntityMetadataVerifierUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/mapping/CompoundPrimaryKeyUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/mapping/CreateTableSpecificationBasicCassandraMappingContextUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/mapping/CreateUserTypeIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/mapping/ForceQuotedEntitiesSimpleUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/mapping/ForceQuotedPropertiesSimpleUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/mapping/PrimaryKeyClassEntityMetadataVerifierUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/mapping/multipackagescanning/MultipackageScanningUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/mapping/multipackagescanning/Top.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/mapping/multipackagescanning/first/First.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/mapping/multipackagescanning/second/Second.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/mapping/multipackagescanning/third/Third.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/ConvertingReactiveCassandraRepositoryTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/ReactiveCassandraRepositoryIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/config/CassandraRepositoryConfigurationExtensionUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/config/ReactiveCassandraRepositoriesRegistrarUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/config/ReactiveCassandraRepositoryConfigurationExtensionUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/conversion/Address.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/conversion/Contact.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/conversion/DerivedQueryMethodsParameterConversionIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/conversion/ParameterConversionTestSupport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/conversion/Phone.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/conversion/StringQueryMethodsParameterConversionIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/isolated/RepositoryQueryMethodParameterTypesIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/isolated/RepositoryReturnTypesIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/query/CassandraParametersParameterAccessorUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/query/CassandraParametersUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/query/CassandraQueryCreatorUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/query/CassandraQueryMethodUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/query/ConvertingParameterAccessorUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/query/ParameterBindingParserUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/query/PartTreeCassandraQueryUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/query/ReactiveCassandraParameterAccessorUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/query/ReactiveCassandraQueryMethodUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/query/ReactivePartTreeCassandraQueryUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/query/ReactiveStringBasedCassandraQueryUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/query/StringBasedCassandraQueryUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/query/StubParameterAccessor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/support/BasicMapIdUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/support/CassandraRepositoryFactoryUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/support/MapIdFactoryUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/support/MappingCassandraEntityInformationUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/support/ReactiveCassandraRepositoryFactoryUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/support/SimpleCassandraRepositoryIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/support/SimpleCassandraRepositoryUnitTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/repository/support/SimpleReactiveCassandraRepositoryIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/support/UserTypeBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/collections/CollectionsRowValueProviderIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/forcequote/compositeprimarykey/CompositeKeyCrudIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/forcequote/compositeprimarykey/Explicit.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/forcequote/compositeprimarykey/ExplicitKey.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/forcequote/compositeprimarykey/ExplicitRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/forcequote/compositeprimarykey/ForceQuotedCompositePrimaryKeyRepositoryIntegrationTestsDelegator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/forcequote/compositeprimarykey/ForceQuotedCompositePrimaryKeyRepositoryJavaConfigIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/forcequote/compositeprimarykey/ForceQuotedCompositePrimaryKeyRepositoryTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/forcequote/compositeprimarykey/ForceQuotedCompositePrimaryKeyRepositoryXmlConfigIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/forcequote/compositeprimarykey/Implicit.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/forcequote/compositeprimarykey/ImplicitKey.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/forcequote/compositeprimarykey/ImplicitRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/forcequote/compositeprimarykey/entity/CorrelationEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/forcequote/config/Explicit.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/forcequote/config/ExplicitProperties.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/forcequote/config/ExplicitPropertiesRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/forcequote/config/ExplicitRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/forcequote/config/ForceQuotedRepositoryIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/forcequote/config/ForceQuotedRepositoryJavaConfigIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/forcequote/config/ForceQuotedRepositoryTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/forcequote/config/ForceQuotedRepositoryXmlConfigIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/forcequote/config/Implicit.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/forcequote/config/ImplicitProperties.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/forcequote/config/ImplicitPropertiesRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/forcequote/config/ImplicitRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/mapping/mapid/proxy/CassandraTemplateMapIdProxyDelegateIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/mapping/mapid/repo/MultiPrimaryKeyColumns.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/mapping/mapid/repo/MultiPrimaryKeyColumnsRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/mapping/mapid/repo/RepositoryMapIdIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/mapping/mapid/repo/SinglePrimaryKecColumnRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/mapping/mapid/repo/SinglePrimaryKeyColumn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/mapping/mapid/template/CassandraTemplateMapIdIntegrationTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/minimal/config/AbsoluteMinimumXmlConfigIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/minimal/config/entities/AbsMin.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/minimal/config/entities/AbsMinRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/cdi/CassandraOperationsProducer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/cdi/CdiRepositoryClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/cdi/CdiRepositoryTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/cdi/CdiUserRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/cdi/OtherQualifier.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/cdi/QualifiedUserRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/cdi/SamplePersonRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/cdi/SamplePersonRepositoryCustom.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/cdi/SamplePersonRepositoryImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/cdi/UserDB.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/querymethods/bigintparam/BigIntParamIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/querymethods/bigintparam/BigThing.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/querymethods/bigintparam/BigThingRepo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/querymethods/datekey/DateKeyIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/querymethods/datekey/DateThing.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/querymethods/datekey/DateThingRepo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/querymethods/declared/Address.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/querymethods/declared/Person.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/querymethods/declared/QueryIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/querymethods/declared/anno/PersonRepositoryWithQueryAnnotations.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/querymethods/declared/anno/QueryAnnotationIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/querymethods/declared/base/PersonRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/querymethods/declared/named/NamedQueryIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/querymethods/declared/named/PersonRepositoryWithNamedQueries.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/querymethods/derived/PersonRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/querymethods/derived/QueryDerivationIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/querymethods/intparam/IntParamIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/querymethods/intparam/IntThing.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/querymethods/intparam/IntThingRepo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/simple/AddressType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/simple/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/simple/UserRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/simple/UserRepositoryIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/simple/UserRepositoryIntegrationTestsDelegator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/simple/UserRepositoryJavaConfigCustomRepositoryBaseClassIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/simple/UserRepositoryJavaConfigIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/repository/simple/UserRepositoryXmlConfigIntegrationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/simpletons/Book.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/simpletons/BookCondition.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/simpletons/BookHistory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/simpletons/BookReference.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/simpletons/LogEntry.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/support/AbstractSpringDataEmbeddedCassandraIntegrationTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/support/IntegrationTestConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/support/SchemaTestUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/support/TestListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/xmlentityscanning/AnotherScannedEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/xmlentityscanning/AnotherScannedEntityRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/xmlentityscanning/ScannedEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/xmlentityscanning/ScannedEntityRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpGraph/springframework/data/cassandra/test/integration/xmlentityscanning/XmlEntityScanningIntegrationTests.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_boundary_high_scale_lib_1_0_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_clearspring_analytics_stream_2_5_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_codahale_metrics_metrics_core_3_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jbellis_jamm_0_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_lmax_disruptor_3_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_ning_compress_lzf_0_8_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_thinkaurelius_thrift_thrift_server_0_3_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_9_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__it_unimi_dsi_fastutil_6_5_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_4_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_jpountz_lz4_lz4_1_2_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_supercsv_super_csv_2_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mindrot_jbcrypt_0_3m.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_all_1_8_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_0_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/baeldung/spring/data/cassandra/model/Book.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/baeldung/spring/data/cassandra/repository/BookRepository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/relation/dbService/dao/ArticleDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/relation/dbService/dao/CommunityDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/relation/dbService/dao/EventDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/relation/dbService/dao/FriendDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/relation/dbService/dao/PhotoDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/relation/dbService/dao/PlayListDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/relation/dbService/dao/VideoDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/relation/dbService/dataSets/CommunityDataSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/relation/dbService/dataSets/PhotoDataSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/relation/dbService/dataSets/PlayListDataSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/relation/dbService/dataSets/VideoDataSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/repository/BookRepositoryIntegrationTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/repository/CassandraTemplateIntegrationTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/repository/CqlQueriesIntegrationTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/baeldung/spring/data/cassandra/model/Book.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/baeldung/spring/data/cassandra/repository/BookRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/relation/dbService/dao/ArticleDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/relation/dbService/dao/CommunityDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/relation/dbService/dao/EventDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/relation/dbService/dao/FriendDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/relation/dbService/dao/PhotoDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/relation/dbService/dao/PlayListDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/relation/dbService/dao/VideoDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/relation/dbService/dataSets/CommunityDataSet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/relation/dbService/dataSets/PhotoDataSet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/relation/dbService/dataSets/PlayListDataSet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/relation/dbService/dataSets/VideoDataSet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/relation/main/Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/commitlog/CommitLog-4-1494963706070.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/commitlog/CommitLog-4-1494963706071.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/cu-cassandra.yaml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-1-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-1-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-1-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-1-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-1-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-1-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-1-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-1-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-5-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-5-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-5-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-5-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-5-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-5-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-5-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-5-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-6-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-6-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-6-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-6-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-6-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-6-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-6-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-6-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-10-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-10-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-10-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-10-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-10-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-10-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-10-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-10-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-11-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-11-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-11-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-11-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-11-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-11-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-11-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-11-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-9-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-9-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-9-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-9-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-9-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-9-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-9-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-9-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-13-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-13-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-13-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-13-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-13-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-13-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-13-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-13-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-13-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-13-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-13-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-13-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-13-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-13-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-13-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-13-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-13-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-13-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-13-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-13-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-13-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-13-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-13-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-13-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-14-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-14-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-14-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-14-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-14-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-14-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-14-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-14-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-2-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-2-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-2-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-2-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-2-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-2-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-2-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-2-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-2-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-2-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-2-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-2-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-2-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-2-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-2-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-2-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-5-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-5-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-5-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-5-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-5-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-5-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-5-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-5-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-5-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-5-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-5-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-5-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-5-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-5-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-5-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-5-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-6-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-6-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-6-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-6-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-6-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-6-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-6-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-6-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/embeddedCassandra/log4j-embedded-cassandra.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/repository/BookRepositoryIntegrationTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/repository/CassandraTemplateIntegrationTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/repository/CqlQueriesIntegrationTest.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_datastax_cassandra_cassandra_driver_core_2_1_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_datastax_cassandra_cassandra_driver_core_3_1_2.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_datastax_cassandra_cassandra_driver_dse_2_1_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_datastax_cassandra_cassandra_driver_mapping_3_2_0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_14_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_concurrentlinkedhashmap_concurrentlinkedhashmap_lru_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_concurrentlinkedhashmap_concurrentlinkedhashmap_lru_1_4_2.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_thrift_libthrift_0_9_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_thrift_libthrift_0_9_1.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_cassandraunit_cassandra_unit_shaded_2_1_9_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_cassandraunit_cassandra_unit_shaded_3_0_0_1.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_cassandraunit_cassandra_unit_spring_2_1_9_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_cassandraunit_cassandra_unit_spring_3_0_0_1.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_cql_1_3_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_cql_1_5_3_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_cassandra_1_3_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_cassandra_1_5_0_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_1_9_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_6_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/baeldung/spring/data/cassandra/config/CassandraConfig.java" afterPath="$PROJECT_DIR$/tmpGraph/cassandra/config/CassandraConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/graphdb/friends/neostore.nodestore.db.id" afterPath="$PROJECT_DIR$/data/graphdb/friends/neostore.nodestore.db.id" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/graphdb/friends/neostore.relationshipstore.db.id" afterPath="$PROJECT_DIR$/data/graphdb/friends/neostore.relationshipstore.db.id" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/graphdb/friends/neostore.transaction.db.0" afterPath="$PROJECT_DIR$/data/graphdb/friends/neostore.transaction.db.0" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/baeldung/spring/data/cassandra/config/CassandraConfig.class" afterPath="$PROJECT_DIR$/target/classes/org/baeldung/spring/data/cassandra/config/CassandraConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/relation/accounts/AccountService.class" afterPath="$PROJECT_DIR$/target/classes/relation/accounts/AccountService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/relation/dbService/CallableStatementImp.class" afterPath="$PROJECT_DIR$/target/classes/relation/dbService/CallableStatementImp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/relation/dbService/DBService.class" afterPath="$PROJECT_DIR$/target/classes/relation/dbService/DBService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/relation/dbService/DBServiceInterface.class" afterPath="$PROJECT_DIR$/target/classes/relation/dbService/DBServiceInterface.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/relation/dbService/dao/CommentDAO.class" afterPath="$PROJECT_DIR$/target/classes/relation/dbService/dao/CommentDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/relation/dbService/dataSets/CommentDataSet.class" afterPath="$PROJECT_DIR$/target/classes/relation/dbService/dataSets/CommentDataSet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/relation/dbService/dataSets/MessageDataSet$BoolType.class" afterPath="$PROJECT_DIR$/target/classes/relation/dbService/dataSets/MessageDataSet$BoolType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/relation/dbService/dataSets/MessageDataSet.class" afterPath="$PROJECT_DIR$/target/classes/relation/dbService/dataSets/MessageDataSet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/relation/dbService/dataSets/UsersDataSet.class" afterPath="$PROJECT_DIR$/target/classes/relation/dbService/dataSets/UsersDataSet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/relation/main/Main.class" afterPath="$PROJECT_DIR$/target/classes/relation/main/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/web-test-drive-py.iml" afterPath="$PROJECT_DIR$/.idea/web-test-drive-py.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/graphdb/friends/logs/debug.log" afterPath="$PROJECT_DIR$/data/graphdb/friends/logs/debug.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/relation/accounts/AccountService.java" afterPath="$PROJECT_DIR$/src/main/java/relation/accounts/AccountService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/relation/dbService/DBService.java" afterPath="$PROJECT_DIR$/src/main/java/relation/dbService/DBService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/relation/dbService/DBServiceInterface.java" afterPath="$PROJECT_DIR$/src/main/java/relation/dbService/DBServiceInterface.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/relation/dbService/dao/CommentDAO.java" afterPath="$PROJECT_DIR$/src/main/java/relation/dbService/dao/CommentDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/relation/dbService/dataSets/ArticleDataSet.java" afterPath="$PROJECT_DIR$/src/main/java/relation/dbService/dataSets/ArticleDataSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/relation/dbService/dataSets/CommentDataSet.java" afterPath="$PROJECT_DIR$/src/main/java/relation/dbService/dataSets/CommentDataSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/relation/dbService/dataSets/EventDataSet.java" afterPath="$PROJECT_DIR$/src/main/java/relation/dbService/dataSets/EventDataSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/relation/dbService/dataSets/FriendDataSet.java" afterPath="$PROJECT_DIR$/src/main/java/relation/dbService/dataSets/FriendDataSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/relation/dbService/dataSets/MessageDataSet.java" afterPath="$PROJECT_DIR$/src/main/java/relation/dbService/dataSets/MessageDataSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/relation/dbService/dataSets/UsersDataSet.java" afterPath="$PROJECT_DIR$/src/main/java/relation/dbService/dataSets/UsersDataSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/relation/main/Main.java" afterPath="$PROJECT_DIR$/src/main/java/relation/main/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/cassandra.properties" afterPath="$PROJECT_DIR$/src/main/resources/cassandra.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/logback.xml" afterPath="$PROJECT_DIR$/src/test/resources/logback.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cassandra.properties" afterPath="$PROJECT_DIR$/target/classes/cassandra.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/logback.xml" afterPath="$PROJECT_DIR$/target/classes/logback.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/logback.xml" afterPath="$PROJECT_DIR$/target/test-classes/logback.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/graph/config/VideoDatabaseNeo4jConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/graph/config/VideoDatabaseNeo4jConfiguration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/graph/domain/User.java" afterPath="$PROJECT_DIR$/src/main/java/graph/domain/User.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -580,68 +16,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/socialDist/cassandra/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="29" column="15" lean-forward="false" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Event.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/socialDist/cassandra/Event.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Comment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/socialDist/cassandra/Comment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Users.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/socialDist/cassandra/Users.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="31" column="20" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Inject.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/socialDist/util/Inject.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="234">
               <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserAccessor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/socialDist/cassandra/accessors/UserAccessor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -668,7 +48,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Neo4jLink.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Neo4jLink.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/socialDist/util/Neo4jLink.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="130">
@@ -678,14 +58,65 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CassandraLink.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/socialDist/util/CassandraLink.java">
+      <file leaf-file-name="VideoDatabaseNeo4jConfiguration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/graph/config/VideoDatabaseNeo4jConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+            <state relative-caret-position="104">
+              <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1014#1015#0" expanded="true" />
+                <element signature="e#1091#1092#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VideoDatabaseNeo4jTestConfiguration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/graph/config/VideoDatabaseNeo4jTestConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Photo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/graph/domain/Photo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserVIP.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/graph/domain/UserVIP.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/graph/domain/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-42">
+              <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsersDataSet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/relation/dbService/dataSets/UsersDataSet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="105" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="105" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -704,7 +135,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>import static org\.assertj\.core\.api\.AssertionsForClassTypes\.assertThat\;\nimport static org\.assertj\.core\.api\.AssertionsForInterfaceTypes\.assertThat\;</find>
       <find>m</find>
       <find>mockit</find>
       <find>mockito</find>
@@ -734,6 +164,7 @@
       <find>datast</find>
       <find>rpc</find>
       <find>dependencies</find>
+      <find>surName</find>
     </findStrings>
     <replaceStrings>
       <replace>PersonTmp</replace>
@@ -743,6 +174,7 @@
       <replace>user</replace>
       <replace />
       <replace>&quot;a&quot;</replace>
+      <replace>secondName</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -756,8 +188,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/target/classes/cassandra.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/org/baeldung/spring/data/cassandra/repository/CommentRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/baeldung/spring/data/cassandra/repository/ArticleRepository.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config/cassandra-connection.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/PersonRepositoryWithNamedQueries.properties" />
@@ -807,6 +237,8 @@
         <option value="$PROJECT_DIR$/src/main/java/socialDist/cassandra/Article.java" />
         <option value="$PROJECT_DIR$/src/main/java/socialDist/cassandra/Flight.java" />
         <option value="$PROJECT_DIR$/src/main/java/socialDist/cassandra/accessors/UserAccessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/graph/config/VideoDatabaseNeo4jConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/graph/domain/User.java" />
       </list>
     </option>
   </component>
@@ -1013,12 +445,30 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="socialDist" />
+              <option name="myItemId" value="web-test-drive-py" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-test-drive-py" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graph" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1044,11 +494,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="socialDist" />
+              <option name="myItemId" value="graph" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cassandra" />
+              <option name="myItemId" value="domain" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1071,6 +521,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graph" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1584,12 +1042,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/springframework/data/cassandra/test/integration/support/AbstractSpringDataEmbeddedCassandraIntegrationTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/example/CassandraConfiguration.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/example/domain/Event.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/java/example/EventRepositoryIntegrationTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/java/example/BaseIntegrationTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/java/example/CassandraTemplateIntegrationTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/resources/logback.xml" />
     <entry file="file://$PROJECT_DIR$/src/test/java/resources/cassandra.properties" />
     <entry file="file://$PROJECT_DIR$/src/main/java/example/domain/Event.java" />
@@ -1771,7 +1223,7 @@
         <state relative-caret-position="208">
           <caret line="29" column="15" lean-forward="false" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1807,7 +1259,7 @@
         <state relative-caret-position="218">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1817,7 +1269,7 @@
         <state relative-caret-position="490">
           <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1852,6 +1304,57 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graph/config/VideoDatabaseNeo4jConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+          <folding>
+            <element signature="e#1014#1015#0" expanded="true" />
+            <element signature="e#1091#1092#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graph/config/VideoDatabaseNeo4jTestConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graph/domain/Photo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graph/domain/UserVIP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/relation/dbService/dataSets/UsersDataSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="105" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="105" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graph/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-42">
+          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
           <folding />
         </state>
       </provider>

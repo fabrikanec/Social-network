@@ -6,12 +6,12 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.neo4j.repository.config.EnableNeo4jRepositories;
 
-@ComponentScan(basePackages = { "com.baeldung.spring.data.neo4j.services" })
+@ComponentScan(basePackages = { "graph.services" })
 @Configuration
-@EnableNeo4jRepositories(basePackages = "com.baeldung.spring.data.neo4j.repostory")
+@EnableNeo4jRepositories(basePackages = "graph.repostory")
 public class VideoDatabaseNeo4jConfiguration {
 
-    private static final String URL = System.getenv("NEO4J_URL") != null ? System.getenv("NEO4J_URL") : "http://neo4j:videos@localhost:7474";
+    private static final String URL = System.getenv("NEO4J_URL") != null ? System.getenv("NEO4J_URL") : "http://neo4j:graph@localhost:7474";
 
     @Bean
     public org.neo4j.ogm.config.Configuration getConfiguration() {
@@ -22,6 +22,6 @@ public class VideoDatabaseNeo4jConfiguration {
 
     @Bean
     public SessionFactory getSessionFactory() {
-        return new SessionFactory(getConfiguration(), "com.baeldung.spring.data.neo4j.domain");
+        return new SessionFactory(getConfiguration(), "graph.domain");
     }
 }

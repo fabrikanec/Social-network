@@ -13,48 +13,19 @@ import java.util.List;
 public class User {
     @GraphId
     Long id;
+    
+    @Relationship(type = "ACTED_IN")
+    private List<User> friends;
+
+    private String login;
+
+    private String password;
 
     private String name;
-    private int born;
 
-    @Relationship(type = "ACTED_IN")
-    private List<Video> videos;
-
-    @Relationship(type = "ACTED_IN")
-    private List<Photo> photos;
+    private String secondName;
 
     public User() {
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public int getBorn() {
-        return born;
-    }
-
-    public List<Video> getVideos() {
-        return videos;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setBorn(int born) {
-        this.born = born;
-    }
-
-    public void setVideos(List<Video> videos) {
-        this.videos = videos;
-    }
-
-    public List<Photo> getPhotos() {
-        return photos;
-    }
-
-    public void setPhotos(List<Photo> photos) {
-        this.photos = photos;
-    }
 }
