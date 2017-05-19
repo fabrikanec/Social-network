@@ -1,12 +1,5 @@
 package relation.main;
 
-import relation.accountServer.AccountServer;
-import relation.accountServer.AccountServerController;
-import relation.accountServer.AccountServerControllerMBean;
-import relation.accountServer.AccountServerI;
-import relation.accounts.UserProfile;
-import relation.dbService.DBException;
-import relation.dbService.dataSets.MessageDataSet;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.eclipse.jetty.server.Handler;
@@ -15,26 +8,27 @@ import org.eclipse.jetty.server.handler.HandlerList;
 import org.eclipse.jetty.server.handler.ResourceHandler;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
+import persistance.chat.WebSocketChatServlet;
+import persistance.sockets.SocketService;
+import relation.accountServer.AccountServer;
+import relation.accountServer.AccountServerController;
+import relation.accountServer.AccountServerControllerMBean;
+import relation.accountServer.AccountServerI;
+import relation.accounts.AccountService;
+import relation.accounts.UserProfile;
+import relation.dbService.DBException;
+import relation.dbService.DBService;
+import relation.dbService.dataSets.MessageDataSet;
 import relation.resourceServer.ResourceServer;
 import relation.resourceServer.ResourceServerController;
 import relation.resourceServer.ResourceServerControllerMBean;
 import relation.resourceServer.ResourceServerI;
-import relation.servlets.HomePageServlet;
+import relation.servlets.*;
 
 import javax.management.MBeanServer;
 import javax.management.ObjectName;
-import java.io.*;
-
+import java.io.IOException;
 import java.lang.management.ManagementFactory;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-
-import relation.accounts.AccountService;
-import relation.servlets.*;
-import relation.dbService.DBService;
-import persistance.chat.WebSocketChatServlet;
-import persistance.sockets.SocketService;
 
 public class Main {
     private static final Logger logger = LogManager.getLogger(relation.main.Main.class.getName());
@@ -155,22 +149,9 @@ public class Main {
         System.out.println(accountService.getUserProfileByLogin("todd").getPass());
         Long id1 = accountService.addNewUser(new UserProfile("Valio", "Todd"));
 
-        Long id_article = accountService.addArticle(id, '0', "text", new java.util.Date());
-        Long id_event =  accountService.addEvent(id, "name", "TOO MUCH TEXT EVENT", "some subj");
-        System.out.println(accountService.getArticleText(id_article));
 
-        Long id_article1 = accountService.addArticle(id, '0', "anothertext", new java.util.Date());
-        System.out.println(accountService.getArticleText(id_article));
-        System.out.println(accountService.getEventText(id_event));
-
-        Long _id_event = accountService.addEvent(id, "name", "TOO", "some subj");
-        System.out.println(accountService.getArticleText(id_article1));
-        System.out.println(accountService.getEventText(_id_event));
-        System.out.println(accountService.getEventText(id_event));
-        System.out.println(accountService.getArticleText(id_article));
-
-        Long id_comment = accountService.addComment(id, id_article, id_event, "kekich");
-        Long id_comment1 = accountService.addComment(id, id_article, id_event, "lolich");
+        Long id_comment = accountService.addComment(id, "kekich");
+        Long id_comment1 = accountService.addComment(id, "lolich");
         System.out.println(accountService.getCommentText(id_comment1));
         System.out.println(accountService.getCommentText(id_comment));
         System.out.println(accountService.getCommentText(id_comment));
@@ -184,23 +165,17 @@ public class Main {
         System.out.println(accountService.getMessageText(id_msg));
         System.out.println(accountService.getMessageText(id_msg1));
 
-        accountService.addUser(accountService.getUserByLogin("todd"), "Community");
-        accountService.addUser(accountService.getUserByLogin("Valio"), "Community");
-        Long fromComUser = accountService.getUsers("Community").get(0).getId();
-        Long fromComUser1 = accountService.getUsers("Community").get(1).getId();
-        System.out.println((fromComUser.equals(id)));
-        System.out.println(fromComUser1.equals(id1));
+//        accountService.addUser(accountService.getUserByLogin("todd"), "Community");
+//        accountService.addUser(accountService.getUserByLogin("Valio"), "Community");
+//        Long fromComUser = accountService.getUsers("Community").get(0).getId();
+//        Long fromComUser1 = accountService.getUsers("Community").get(1).getId();
+//        System.out.println((fromComUser.equals(id)));
+//        System.out.println(fromComUser1.equals(id1));
 
-        Long id_friend = accountService.addNewUser(new UserProfile("Volly", "Valio"));
-        accountService.addFriend(accountService.getUserByLogin("Volly"), accountService.getUserByLogin("todd"));
-        System.out.println(accountService.getFriend(id_friend).equals(id));
+
         //
         System.out.println(accountService.count_comm());
         System.out.println(accountService.count_msg());
         //
     }
-}
-
-class Test<T> {
-
 }

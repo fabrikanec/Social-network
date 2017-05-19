@@ -1,40 +1,39 @@
 package relation.dbService.dataSets;
 
 
+import org.hibernate.HibernateException;
 import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
 import org.hibernate.annotations.TypeDefs;
+import org.hibernate.engine.spi.SessionImplementor;
 import org.hibernate.usertype.ParameterizedType;
 import org.hibernate.usertype.UserType;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Types;
+import java.util.Date;
 import java.util.Properties;
 import java.util.logging.Logger;
-
-import org.hibernate.HibernateException;
-import org.hibernate.engine.spi.SessionImplementor;
 
 @Entity
 @Table(name = "user_message")
 @TypeDefs({
         @TypeDef(name = MessageDataSet.BoolType.NAME, typeClass = MessageDataSet.BoolType.class)
         })
-public class MessageDataSet implements Serializable { // Serializable Important to Hibernate!
+public class MessageDataSet implements Serializable {
     private static final Long serialVersionUID = -8706689714326132798L;
-
-    @Column(name = "user_id")
-    private Long id;
 
     @Id
     @Column(name = "message_id", unique = true, updatable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long message_id;
+
+    @Column(name = "user_id")
+    private Long id;
 
     @Column(name = "receaver_msg_deleted")
     @Type(type = BoolType.NAME)
@@ -50,7 +49,7 @@ public class MessageDataSet implements Serializable { // Serializable Important 
     @Column (name = "date")
     private Date date;
 
-    //Important to Hibernate!
+
     @SuppressWarnings("UnusedDeclaration")
     public MessageDataSet() {
     }

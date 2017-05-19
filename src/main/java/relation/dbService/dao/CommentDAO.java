@@ -19,7 +19,7 @@ public class CommentDAO {
         return ((CommentDataSet) criteria.add(Restrictions.eq("comment_id", comment_id)).uniqueResult());
     }
 
-    public Long insertComment(Long id, Long article_id, Long event_id, String text) throws HibernateException {
-        return (Long) session.save(new CommentDataSet(id, article_id, event_id, text));
+    public Long insertComment(Long id, String text) throws HibernateException {
+        return (Long) session.save(new CommentDataSet(id, text));
     }
 }

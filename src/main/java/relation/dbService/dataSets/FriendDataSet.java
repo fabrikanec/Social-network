@@ -7,7 +7,7 @@ import java.util.Set;
 
 @Entity
 @Table(name = "friend")
-public class FriendDataSet implements Serializable { // Serializable Important to Hibernate!
+public class FriendDataSet implements Serializable {
     private static final Long serialVersionUID = -8706689714326132798L;
 
     @Column(name = "user_id")
@@ -24,7 +24,7 @@ public class FriendDataSet implements Serializable { // Serializable Important t
     @ManyToMany(fetch = FetchType.EAGER) // fetch = FetchType.LAZY
     private Set<UsersDataSet> users = new HashSet<>();
 
-    //Important to Hibernate!
+
     @SuppressWarnings("UnusedDeclaration")
     public FriendDataSet() {
     }

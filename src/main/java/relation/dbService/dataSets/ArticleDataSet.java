@@ -6,7 +6,7 @@ import java.util.Date;
 
 @Entity
 @Table(name = "article")
-public class ArticleDataSet implements Serializable { // Serializable Important to Hibernate!
+public class ArticleDataSet implements Serializable {
     private static final Long serialVersionUID = -8706689714326132798L;
 
     @Column(name = "user_id")
@@ -26,7 +26,7 @@ public class ArticleDataSet implements Serializable { // Serializable Important 
     @Column (name = "date")
     private Date date;
 
-    //Important to Hibernate!
+
     @SuppressWarnings("UnusedDeclaration")
     public ArticleDataSet() {
     }

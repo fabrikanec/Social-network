@@ -2,13 +2,11 @@ package relation.dbService.dataSets;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.HashSet;
-import java.util.Set;
 
 
 @Entity
 @Table(name = "users")
-public class UsersDataSet implements Serializable { // Serializable Important to Hibernate!
+public class UsersDataSet implements Serializable {
     private static final Long serialVersionUID = -8706689714326132798L;
 
     @Id
@@ -28,13 +26,7 @@ public class UsersDataSet implements Serializable { // Serializable Important to
     @Column (name = "surname")
     private String surname;
 
-    @ManyToMany(targetEntity = CommunityDataSet.class, mappedBy="users") //, fetch = FetchType.LAZY
-    private Set<Long> communities = new HashSet<>();
 
-    @ManyToMany(targetEntity = CommunityDataSet.class, mappedBy="users")
-    private Set<Long> friends = new HashSet<>();
-
-    //Important to Hibernate!
     @SuppressWarnings("UnusedDeclaration")
     public UsersDataSet() {
     }
@@ -103,31 +95,6 @@ public class UsersDataSet implements Serializable { // Serializable Important to
     }
 
     public void setSurname(String surname) { this.surname = surname; }
-
-    public Set<Long> getCommunities() {
-        return communities;
-    }
-
-    public Set<Long> getFriends() {
-        return friends;
-    }
-
-    public void setCommunities(Set<Long> communities) {
-        this.communities = communities;
-    }
-
-    public void setFriends(Set<Long> friends) {
-        this.friends = friends;
-    }
-
-    public void setCommunity(Long community_id) {
-        this.communities.add(community_id);
-    }
-
-    public void setFriend(Long friend_id) {
-        this.friends.add(friend_id);
-    }
-
 
     @Override
     public String toString() {
