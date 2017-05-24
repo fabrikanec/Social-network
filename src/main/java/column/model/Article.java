@@ -19,13 +19,13 @@ public class Article {
 
     private String publisher;
 
-    private Set<String> tags = new HashSet<>();
+    private String text;
 
-    public Article(UUID id, String title, String publisher, Set<String> tags) {
+    public Article(UUID id, String title, String publisher, String text) {
         this.id = id;
         this.title = title;
         this.publisher = publisher;
-        this.tags = tags;
+        this.text = text;
     }
 
     public UUID getId() {
@@ -52,16 +52,11 @@ public class Article {
         this.publisher = publisher;
     }
 
-    public Set<String> getTags() {
-        return tags;
+    public String getText() {
+        return text;
     }
 
-    public void setTags(Set<String> tags) {
-        this.tags = tags;
+    public void setText(String text) {
+        this.text = text;
     }
-
-    public void setTag(String tag) {
-        this.tags.add(tag);
-    }
-
 }

@@ -2,8 +2,8 @@ package main.java.relation.service;
 
 import main.java.relation.messageSystem.*;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class FrontEnd implements Abonent, Runnable {
@@ -38,17 +38,17 @@ public class FrontEnd implements Abonent, Runnable {
      * Contains address, what frontend will have to know
      */
     private static class AddressService {
-        private final List<Address> dbServices;
+        private final Set<Address> dbServices;
         private final AtomicInteger asCounter;
 
         public AddressService() {
-            dbServices = new ArrayList<>();
+            dbServices = new HashSet<>();
             asCounter = new AtomicInteger();
         }
 
         public Address getDBService() {
             final int index = asCounter.incrementAndGet() % dbServices.size();
-            return dbServices.get(index);
+            return dbServices.iterator().next();
         }
 
         public void addDBService(Address dbService) {

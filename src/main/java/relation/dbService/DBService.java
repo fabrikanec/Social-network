@@ -13,12 +13,13 @@ import org.hibernate.service.ServiceRegistry;
 
 import java.sql.*;
 import java.util.Date;
-import java.util.List;
+import java.util.Set;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.util.UUID;
 
 class CallableStatementImp {
     Connection connection = null;
@@ -37,7 +38,7 @@ class CallableStatementImp {
         Connection con = null;
         // checking connection
         if (connection != null) {
-            System.out.println("Can't creaate a connection");
+            System.out.println("Can't create a connection");
             return connection;
         } else {
             try {
@@ -168,12 +169,12 @@ public class DBService implements DBServiceInterface {
     }
 
     /** ArticleDataSet Logic */
-    public Long addArticle(Long id, char secure, String text, Date date) throws DBException {
+    public Long addArticle(Long id, String publisher, String title, String text) throws DBException {
         try {
             Session session = sessionFactory.openSession();
             Transaction transaction = session.beginTransaction();
             ArticleDAO dao = new ArticleDAO(session);
-            Long article_id = dao.insertArticle(id, secure, text, date);
+            Long article_id = dao.insertArticle(id, publisher, title, text);
             transaction.commit();
             session.close();
             return article_id;
@@ -249,15 +250,15 @@ public class DBService implements DBServiceInterface {
     }
 
     /**CommentDataSet Logic */
-    public Long addComment(Long id, Long id_article, Long id_event, String text) throws DBException {
+    public Long addComment(Long comment_id, Long id, Long id_article, Long id_event, String text) throws DBException {
         try {
             Session session = sessionFactory.openSession();
             Transaction transaction = session.beginTransaction();
             CommentDAO dao = new CommentDAO(session);
-            Long comment_id = dao.insertComment(id, id_article, id_event, text);
+            Long com_id = dao.insertComment(comment_id, id, id_article, id_event, text);
             transaction.commit();
             session.close();
-            return comment_id;
+            return com_id;
         } catch (HibernateException e) {
             throw new DBException(e);
         }
@@ -313,7 +314,7 @@ public class DBService implements DBServiceInterface {
             // checking result
             if (rs == null) {
                 System.out.println("Result is null");
-                return 0L;
+                return null;
             } else {
                 rs.next();
                 String res = (rs.getString(1));
@@ -322,7 +323,7 @@ public class DBService implements DBServiceInterface {
             }
         } catch (Exception e) {
             System.out.println(e.toString());
-            return 0L;
+            return null;
         }
     }
     
@@ -355,11 +356,11 @@ public class DBService implements DBServiceInterface {
         }
     }
 
-    public List<CommunityDataSet> getUsers(String com_name) throws DBException {
+    public Set<CommunityDataSet> getUsers(String com_name) throws DBException {
         try {
             Session session = sessionFactory.openSession();
             CommunityDAO dao = new CommunityDAO(session);
-            List<CommunityDataSet> dataSet = dao.getUsers(com_name);
+            Set<CommunityDataSet> dataSet = dao.getUsers(com_name);
             session.close();
             return dataSet;
         } catch (HibernateException e) {
@@ -377,7 +378,7 @@ public class DBService implements DBServiceInterface {
             // checking result
             if (rs == null) {
                 System.out.println("Result is null");
-                return 0L;
+                return null;
             } else {
                 rs.next();
                 String res =  (rs.getString(1));
@@ -386,7 +387,7 @@ public class DBService implements DBServiceInterface {
             }
         } catch (Exception e) {
             System.out.println(e.toString());
-            return 0L;
+            return null;
         }
     }
 }

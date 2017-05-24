@@ -2,6 +2,7 @@ package main.java.graph;
 
 import java.util.Collections;
 
+import main.java.graph.entities.Community;
 import org.neo4j.ogm.config.Configuration;
 import org.neo4j.ogm.session.Session;
 import org.neo4j.ogm.session.SessionFactory;
@@ -28,7 +29,7 @@ public class Main {
 		Session session = sessionFactory.openSession();
 
 		// Create few courses
-		/*Community music = new Community();
+		Community music = new Community();
 		music.setName("music comm");
 
 		Community algo = new Community();
@@ -39,13 +40,13 @@ public class Main {
 
 		// Create few students
 		User alice = new User();
-		alice.setName("Alice");
+		alice.setName("lol");
 
 		User bob = new User();
-		bob.setName("Bob");
+		bob.setName("kek");
 
 		User carol = new User();
-		carol.setName("Carol");
+		carol.setName("cheburek");
 
 		// Add the courses
 		alice.getCommunities().add(music);
@@ -63,7 +64,7 @@ public class Main {
 		// Persist the objects. Persisting students persists courses as well.
 		session.save(alice);
 		session.save(bob);
-		session.save(carol);*/
+		session.save(carol);
 
 		// Retrieve Students who enrolled for Advanced Algorithm
 		Iterable<User> users = session.query(User.class,

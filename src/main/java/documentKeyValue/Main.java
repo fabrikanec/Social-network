@@ -1,8 +1,13 @@
 package main.java.documentKeyValue;
 
+import java.io.*;
 import java.util.*;
 
+import com.mongodb.DB;
+import com.mongodb.MongoClient;
 import redis.clients.jedis.*;
+import redis.clients.jedis.exceptions.JedisConnectionException;
+import redis.clients.jedis.exceptions.JedisException;
 
 public class Main {
 
@@ -28,7 +33,7 @@ public class Main {
         return cmd_type;
     }
 
-    public static void run() {
+    public void run() {
         String[] tokens;
         String line;
         Scanner sc = new Scanner(System.in);
@@ -60,6 +65,6 @@ public class Main {
     }
 
     public static void main(String... args) {
-        run();
+        new Main().run();
     }
 }

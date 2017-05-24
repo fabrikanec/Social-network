@@ -8,6 +8,7 @@ import org.hibernate.Session;
 import org.hibernate.criterion.Restrictions;
 
 import java.util.Date;
+import java.util.UUID;
 
 //PASSED
 public class EventDAO {

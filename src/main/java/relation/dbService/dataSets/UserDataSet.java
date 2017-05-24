@@ -4,17 +4,18 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.UUID;
 
 
 @Entity
 @Table(name = "users")
 public class UserDataSet implements Serializable { // Serializable Important to Hibernate!
-    private static final Long serialVersionUID = -8706689714326132798L;
+    private static final long serialVersionUID = -8706689714326132798L;
 
     @Id
     @Column(name = "user_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id = 0L;
+    private Long id;
 
     @Column(name = "login", unique = true, updatable = false)
     private String login;

@@ -4,22 +4,23 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.UUID;
 
 @Entity
 @Table(name = "friend")
-public class FriendDataSet implements Serializable { // Serializable Important to Hibernate!
-    private static final Long serialVersionUID = -8706689714326132798L;
+public class FriendDataSet implements Serializable {
+    private static final long serialVersionUID = -8706689714326132798L;
+
+    @Id
+    @Column(name = "syntetic_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long syntetic_id;
 
     @Column(name = "user_id")
     private Long id;
 
     @Column(name = "friend_id")
     private Long friend_id;
-
-    @Id
-    @Column(name = "syntetic_id")
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long syntetic_id;
 
     @ManyToMany(fetch = FetchType.EAGER) // fetch = FetchType.LAZY
     private Set<UserDataSet> users = new HashSet<>();

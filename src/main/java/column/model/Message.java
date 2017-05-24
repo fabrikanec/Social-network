@@ -16,6 +16,10 @@ public class Message {
     
     private UUID user_id;
 
+    private boolean receaverMsgDeletedFlag;
+
+    private boolean posterMsgDeletedFlag;
+
     private String text;
 
     private Date date;
@@ -57,5 +61,21 @@ public class Message {
 
     public void setDate(Date date) {
         this.date = date;
+    }
+
+    public boolean isReceaverMsgDeletedFlag() {
+        return receaverMsgDeletedFlag;
+    }
+
+    public void setReceaverMsgDeletedFlag(boolean receaverMsgDeletedFlag) {
+        this.receaverMsgDeletedFlag = receaverMsgDeletedFlag;
+    }
+
+    public boolean isPosterMsgDeletedFlag() {
+        return posterMsgDeletedFlag;
+    }
+
+    public void setPosterMsgDeletedFlag(boolean posterMsgDeletedFlag) {
+        this.posterMsgDeletedFlag = posterMsgDeletedFlag;
     }
 }

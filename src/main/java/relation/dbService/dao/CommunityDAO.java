@@ -7,8 +7,9 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.criterion.Restrictions;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.UUID;
 
 public class CommunityDAO {
     private Session session;
@@ -17,9 +18,9 @@ public class CommunityDAO {
         this.session = session;
     }
 
-    public List<CommunityDataSet> getUsers(String community_name) throws HibernateException {
+    public Set<CommunityDataSet> getUsers(String community_name) throws HibernateException {
         Criteria criteria = session.createCriteria(CommunityDataSet.class);
-        List<CommunityDataSet> res = new ArrayList<>();
+        Set<CommunityDataSet> res = new HashSet<>();
         res.add((CommunityDataSet) criteria.add(Restrictions.eq("community_name", community_name)).list().get(0));
         res.add((CommunityDataSet) criteria.add(Restrictions.eq("community_name", community_name)).list().get(1));
         return res;

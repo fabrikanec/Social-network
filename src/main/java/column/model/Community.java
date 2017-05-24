@@ -17,15 +17,12 @@ public class Community {
     @Id
     private UUID community_id;
 
-    private UUID user_id;
-
     private String community_name;
 
     private Set<UUID> users = new HashSet<>();
 
-    public Community(UUID community_id, UUID user_id, String community_name, Set<UUID> users) {
+    public Community(UUID community_id, String community_name, Set<UUID> users) {
         this.community_id = community_id;
-        this.user_id = user_id;
         this.community_name = community_name;
         this.users = users;
     }
@@ -36,14 +33,6 @@ public class Community {
 
     public void setCommunity_id(UUID community_id) {
         this.community_id = community_id;
-    }
-
-    public UUID getUser_id() {
-        return user_id;
-    }
-
-    public void setUser_id(UUID user_id) {
-        this.user_id = user_id;
     }
 
     public String getCommunity_name() {

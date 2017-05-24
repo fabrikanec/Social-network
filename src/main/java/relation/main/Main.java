@@ -1,5 +1,6 @@
 package main.java.relation.main;
 
+import com.datastax.driver.core.utils.UUIDs;
 import main.java.persistance.chat.WebSocketChatServlet;
 import main.java.persistance.sockets.SocketService;
 import main.java.relation.accountServer.AccountServer;
@@ -33,6 +34,7 @@ import javax.management.ObjectName;
 import java.io.*;
 import java.lang.management.ManagementFactory;
 import java.util.Properties;
+import java.util.UUID;
 
 import main.java.relation.account.AccountService;
 import main.java.relation.dbService.DBService;
@@ -87,7 +89,7 @@ public class Main {
         } catch (...) {...}
         */
 
-        if (args.length != 1) {
+        /*if (args.length != 1) {
             logger.error("Use port as the first argument");
             System.exit(1);
         }
@@ -95,59 +97,60 @@ public class Main {
         final int port = Integer.valueOf(portString);
 
         logger.info("Starting at http://127.0.0.1:" + portString);
-
-        AccountServerI accountServer = new AccountServer(10);
+*/
+        /*AccountServerI accountServer = new AccountServer(10);
         ResourceServerI resourceServer = new ResourceServer();
 
         AccountServerControllerMBean serverStatistics = new AccountServerController(accountServer);
         MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
         ObjectName name = new ObjectName("Admin:type=AccountServerController");
         mbs.registerMBean(serverStatistics, name);
-
-        ResourceServerControllerMBean resourceServerBean = new ResourceServerController(resourceServer);
+*/
+        /*ResourceServerControllerMBean resourceServerBean = new ResourceServerController(resourceServer);
         mbs = ManagementFactory.getPlatformMBeanServer();
         name = new ObjectName("Admin:type=ResourceServerController");
-        mbs.registerMBean(resourceServerBean, name);
+        mbs.registerMBean(resourceServerBean, name);*/
 
-        Server server = new Server(port);
-        ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
+       /* Server server = new Server(port);
+        ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);*/
 
         DBService dbService = new DBService();
         AccountService accountService = new AccountService(dbService);
         dbService.printConnectInfo();
 
-        context.addServlet(new ServletHolder(new ResourceRequestServlet(resourceServer)), ResourceRequestServlet.PAGE_URL);
-        context.addServlet(new ServletHolder(new AdminRequestServlet(accountServer)), AdminRequestServlet.PAGE_URL);
-        context.addServlet(new ServletHolder(new HomePageServlet(accountServer)), HomePageServlet.PAGE_URL);
-        context.addServlet(new ServletHolder(new SignUpServlet(accountService)), "/signup");
-        context.addServlet(new ServletHolder(new SignInServlet(accountService)), "/signin");
-        context.addServlet(new ServletHolder(new SessionsServlet(accountService)), "/api/v1/sessions");
-        context.addServlet(new ServletHolder(new WebSocketChatServlet()), "/src/chat");
-        context.addServlet(new ServletHolder(new main.java.relation.servlet.AllRequestsServlet()), "/*");
+//        context.addServlet(new ServletHolder(new ResourceRequestServlet(resourceServer)), ResourceRequestServlet.PAGE_URL);
+//        context.addServlet(new ServletHolder(new AdminRequestServlet(accountServer)), AdminRequestServlet.PAGE_URL);
+//        context.addServlet(new ServletHolder(new HomePageServlet(accountServer)), HomePageServlet.PAGE_URL);
+//        context.addServlet(new ServletHolder(new SignUpServlet(accountService)), "/signup");
+//        context.addServlet(new ServletHolder(new SignInServlet(accountService)), "/signin");
+//        context.addServlet(new ServletHolder(new SessionsServlet(accountService)), "/api/v1/sessions");
+//        context.addServlet(new ServletHolder(new WebSocketChatServlet()), "/src/chat");
+//        context.addServlet(new ServletHolder(new main.java.relation.servlet.AllRequestsServlet()), "/*");
 
-        ResourceHandler resource_handler = new ResourceHandler();
-        resource_handler.setDirectoriesListed(true);
-        resource_handler.setResourceBase("static");
+//        ResourceHandler resource_handler = new ResourceHandler();
+//        resource_handler.setDirectoriesListed(true);
+//        resource_handler.setResourceBase("static");
 
-        HandlerList handlers = new HandlerList();
-        handlers.setHandlers(new Handler[]{resource_handler, context});
-        server.setHandler(handlers);
-
-        server.start();
+//        HandlerList handlers = new HandlerList();
+//        handlers.setHandlers(new Handler[]{resource_handler, context});
+//        server.setHandler(handlers);
+//
+//        server.start();
         //sockets
 
-        Runnable socketServer = () -> {
-            try {
-                new SocketService("localhost", 5050).startServer();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        };
-        new Thread(socketServer);
-        //
-        logger.info("Server started");
-        //testDB(dbService, accountService);
-        server.join();
+//        Runnable socketServer = () -> {
+//            try {
+//                new SocketService("localhost", 5050).startServer();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//        };
+//        new Thread(socketServer);
+//        //
+//        logger.info("Server started");
+//        //testDB(dbService, accountService);
+//        server.join();
+        testDB(dbService, accountService);
     }
 
     public static void testDB(DBService dbService, AccountService accountService) throws DBException{
@@ -156,11 +159,11 @@ public class Main {
         System.out.println(accountService.getUserProfileByLogin("todd").getPass());
         Long id1 = accountService.addNewUser(new UserProfile("Valio", "Todd"));
 
-        Long id_article = accountService.addArticle(id, '0', "text", new java.util.Date());
+        Long id_article = accountService.addArticle(id, "publisher", "title", "text");
         Long id_event =  accountService.addEvent(id, "name", "TOO MUCH TEXT EVENT", "some subj");
         System.out.println(accountService.getArticleText(id_article));
 
-        Long id_article1 = accountService.addArticle(id, '0', "anothertext", new java.util.Date());
+        Long id_article1 = accountService.addArticle(id, "publisher", "title", "text");
         System.out.println(accountService.getArticleText(id_article));
         System.out.println(accountService.getEventText(id_event));
 
@@ -169,7 +172,7 @@ public class Main {
         System.out.println(accountService.getEventText(_id_event));
         System.out.println(accountService.getEventText(id_event));
         System.out.println(accountService.getArticleText(id_article));
-
+/*
         Long id_comment = accountService.addComment(id, id_article, id_event, "kekich");
         Long id_comment1 = accountService.addComment(id, id_article, id_event, "lolich");
         System.out.println(accountService.getCommentText(id_comment1));
@@ -187,8 +190,8 @@ public class Main {
 
         accountService.addUser(accountService.getUserByLogin("todd"), "Community");
         accountService.addUser(accountService.getUserByLogin("Valio"), "Community");
-        Long fromComUser = accountService.getUsers("Community").get(0).getId();
-        Long fromComUser1 = accountService.getUsers("Community").get(1).getId();
+        Long fromComUser = accountService.getUsers("Community").iterator().next().getId();
+        Long fromComUser1 = accountService.getUsers("Community").iterator().next()..getId();
         System.out.println((fromComUser.equals(id)));
         System.out.println(fromComUser1.equals(id1));
 
@@ -198,6 +201,6 @@ public class Main {
         //
         System.out.println(accountService.count_comm());
         System.out.println(accountService.count_msg());
-        //
+        //*/
     }
 }

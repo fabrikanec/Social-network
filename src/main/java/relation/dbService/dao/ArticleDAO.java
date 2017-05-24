@@ -7,8 +7,8 @@ import org.hibernate.Session;
 import org.hibernate.criterion.Restrictions;
 
 import java.util.Date;
+import java.util.UUID;
 
-//PASSED
 public class ArticleDAO {
     private Session session;
 
@@ -21,7 +21,7 @@ public class ArticleDAO {
         return ((ArticleDataSet) criteria.add(Restrictions.eq("article_id", article_id)).uniqueResult());
     }
 
-    public Long insertArticle(Long id, char secure, String text, Date date) throws HibernateException {
-        return (Long) session.save(new ArticleDataSet(id, secure, text, date));
+    public Long insertArticle(Long id, String publisher, String title, String text) throws HibernateException {
+        return (Long) session.save(new ArticleDataSet(id, publisher, title, text));
     }
 }

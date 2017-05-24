@@ -8,6 +8,7 @@ import org.hibernate.Session;
 import org.hibernate.criterion.Restrictions;
 
 import java.util.Date;
+import java.util.UUID;
 
 //PASSED
 public class CommentDAO {
@@ -22,7 +23,7 @@ public class CommentDAO {
         return ((CommentDataSet) criteria.add(Restrictions.eq("comment_id", comment_id)).uniqueResult());
     }
 
-    public Long insertComment(Long id, Long article_id, Long event_id, String text) throws HibernateException {
-        return (Long) session.save(new CommentDataSet(id, article_id, event_id, text));
+    public Long insertComment(Long comment_id, Long user_id, Long article_id, Long event_id, String text) throws HibernateException {
+        return (Long) session.save(new CommentDataSet(comment_id, user_id, article_id, event_id, text));
     }
 }

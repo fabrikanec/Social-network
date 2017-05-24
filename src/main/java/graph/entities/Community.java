@@ -8,6 +8,7 @@ import org.neo4j.ogm.annotation.Relationship;
 import java.util.HashSet;
 import java.util.Set;
 
+
 @NodeEntity
 public class Community {
 
@@ -73,5 +74,4 @@ public class Community {
 			return false;
 		return true;
 	}
-
 }

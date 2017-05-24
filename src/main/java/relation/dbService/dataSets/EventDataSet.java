@@ -2,19 +2,20 @@ package main.java.relation.dbService.dataSets;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.UUID;
 
 @Entity
 @Table(name = "event")
 public class EventDataSet implements Serializable { // Serializable Important to Hibernate!
-    private static final Long serialVersionUID = -8706689714326132798L;
-
-    @Column(name = "user_id")
-    private Long id;
+    private static final long serialVersionUID = -8706689714326132798L;
 
     @Id
     @Column(name = "event_id", unique = true, updatable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long event_id;
+
+    @Column(name = "user_id")
+    private Long id;
 
     @Column(name = "name")
     private String name;

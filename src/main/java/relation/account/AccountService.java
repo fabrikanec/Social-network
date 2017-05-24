@@ -57,8 +57,8 @@ public class AccountService {
     }
 
     /** ArticleDataSet Logic */
-    public Long addArticle(Long id, char secure, String text, Date date) throws DBException {
-        return  dbService.addArticle(id,secure, text, date);
+    public Long addArticle(Long article_id, String publisher, String title, String text) throws DBException {
+        return  dbService.addArticle(article_id, publisher, title, text);
     }
 
     public String getArticleText(Long article_id) throws DBException {
@@ -99,8 +99,8 @@ public class AccountService {
     }
 
     /** CommentDataSet Logic */
-    public Long addComment(Long id, Long article_id, Long event_id, String text) throws DBException {
-        return  dbService.addComment(id, article_id, event_id, text);
+    public Long addComment(Long comment_id, Long id, Long article_id, Long event_id, String text) throws DBException {
+        return  dbService.addComment(comment_id, id, article_id, event_id, text);
     }
 
     public String getCommentText(Long comment_id) throws DBException {
@@ -139,7 +139,7 @@ public class AccountService {
         return dbService.addUser(user, community_name);
     }
 
-    public List<CommunityDataSet> getUsers(String com_name) throws DBException {
+    public Set<CommunityDataSet> getUsers(String com_name) throws DBException {
         return dbService.getUsers(com_name);
 
     }

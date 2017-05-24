@@ -3,75 +3,71 @@ package main.java.relation.dbService.dataSets;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.UUID;
 
 @Entity
 @Table(name = "article")
 public class ArticleDataSet implements Serializable { // Serializable Important to Hibernate!
-    private static final Long serialVersionUID = -8706689714326132798L;
-
-    @Column(name = "user_id")
-    private Long id;
+    private static final long serialVersionUID = -8706689714326132798L;
 
     @Id
     @Column(name = "article_id", unique = true, updatable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long article_id;
+    @Column(name = "publisher")
+    private String publisher;
 
-    @Column(name = "secure")
-    private char secure;
+    @Column(name = "title")
+    private String title;
 
-    @Column (name = "text")
+    @Column(name = "text")
     private String text;
 
-    @Column (name = "date")
-    private Date date;
+    public ArticleDataSet(Long article_id, String publisher, String title, String text) {
+        this.article_id = article_id;
+        this.publisher = publisher;
+        this.title = title;
+        this.text = text;
+    }
 
-    //Important to Hibernate!
-    @SuppressWarnings("UnusedDeclaration")
     public ArticleDataSet() {
     }
 
-    public ArticleDataSet(Long id, char secure, String text, Date date) {
-        this.setId(id);
-        //this.setArticleId(article_id);
-        this.setSecure(secure);
-        this.setText(text);
-        this.setDate(date);
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
     }
 
-
-    @SuppressWarnings("UnusedDeclaration")
-
-    public Long getId() { return id; }
-
-    public void setId(Long id) {
-        this.id = id;
+    public String getPublisher() {
+        return publisher;
     }
 
-    public Long getArticleId() {
+    public void setPublisher(String publisher) {
+        this.publisher = publisher;
+    }
+
+    public Long getArticle_id() {
         return article_id;
     }
 
-    public void setArticleId(Long article_id) {
+    public void setArticle_id(Long article_id) {
         this.article_id = article_id;
     }
 
-    public char getSecure() { return secure; }
+    public String getText() {
+        return text;
+    }
 
-    public void setSecure(char flag) { this.secure = flag; }
+    public void setText(String text) {
+        this.text = text;
+    }
 
-    public String getText() { return text; }
+    public String getTitle() {
+        return title;
+    }
 
-    public void setText(String text) { this.text = text; }
-
-    public Date getDate() { return date; }
-
-    public void setDate(Date date) { this.date = date; }
-
-    public String toString() {
-        return "ArticleDataSet{" +
-                "id=" + id +
-                ", article_id='" + article_id + '\'' +
-                '}';
+    public void setTitle(String title) {
+        this.title = title;
     }
 }
