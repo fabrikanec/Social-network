@@ -54,7 +54,9 @@ public class App {
         cassandraMappingContext = (CassandraMappingContext) context.getBean("context");
         cassandraConverter = (CassandraConverter) context.getBean("converter");
         cluster = Cluster.builder().addContactPoints("127.0.0.1").withPort(9042).build();
-        final Session session = cluster.connect(KEYSPACE);
+        final Session session = cluster.connect();
+        session.execute(KEYSPACE_CREATION_QUERY);
+        session.execute(KEYSPACE_ACTIVATE_QUERY);
         adminTemplate = new CassandraAdminTemplate(session, cassandraConverter);
         template = new CassandraTemplate(session, cassandraConverter);
     }
@@ -101,22 +103,25 @@ public class App {
                 getCreateUserTypeSpecificationFor(cassandraMappingContext.getPersistentEntity(Event.class))
                 .ifNotExists(true);
         adminTemplate.execute(CreateUserTypeCqlGenerator.toCql(userTypeSpecification));
+        userTypeSpecification = cassandraMappingContext.
+                getCreateUserTypeSpecificationFor(cassandraMappingContext.getPersistentEntity(Community.class))
+                .ifNotExists(true);
+        adminTemplate.execute(CreateUserTypeCqlGenerator.toCql(userTypeSpecification));
 
 
-        adminTemplate.createTable(true, CqlIdentifier.cqlId(DATA_TABLE_NAME), User.class, new HashMap<String, Object>());
+        adminTemplate.createTable(true, CqlIdentifier.cqlId(DATA_TABLE_NAME),
+                                                           User.class, new HashMap<String, Object>());
+        User user = new User(UUIDs.timeBased(), UUIDs.timeBased(),
+                "pass", "fst", "lst");
+        template.insert(user);
 
-        template.insert(new User(UUIDs.timeBased(), UUIDs.timeBased(),
-                Arrays.asList(new Comment(UUIDs.timeBased(),UUIDs.timeBased(),UUIDs.timeBased(),UUIDs.timeBased(), "lol")),
-                Arrays.asList(new Event(UUIDs.timeBased(), UUIDs.timeBased(), "str", "event", "strevent")),
-                Arrays.asList(new Article(UUIDs.timeBased(), "art", "arter", new HashSet<String>(){{add("set");}})),
-                Arrays.asList(new Message(UUIDs.timeBased(), UUIDs.timeBased(), "msg", new Date())),
-                new HashSet<>(Arrays.asList(UUIDs.timeBased())),
-                "pass", "fst", "lst"));
+        user.addComment(new Comment(UUIDs.timeBased(), UUIDs.timeBased(), UUIDs.timeBased(), UUIDs.timeBased(), "lol"));
 
+        template.update(user);
         //QueryBuilder qb = new QueryBuilder(cluster);//
         Select s = QueryBuilder.select().from("users");
         System.out.println(template.count(User.class));
-
+        ;
         //template.truncate("users");
         System.out.println("done");
         if (new Scanner(System.in).nextLine().contains("exit")) {

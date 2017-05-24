@@ -10,13 +10,13 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
  * Created by cezar on 5/23/17.
  */
-
-@Component
+@Service
 public class UserRepositoryImpl implements UserRepository {
 
     private UserRepository userRepository;

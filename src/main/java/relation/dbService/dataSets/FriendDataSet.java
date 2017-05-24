@@ -1,4 +1,4 @@
-package relation.dbService.dataSets;
+package main.java.relation.dbService.dataSets;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -7,7 +7,7 @@ import java.util.Set;
 
 @Entity
 @Table(name = "friend")
-public class FriendDataSet implements Serializable {
+public class FriendDataSet implements Serializable { // Serializable Important to Hibernate!
     private static final Long serialVersionUID = -8706689714326132798L;
 
     @Column(name = "user_id")
@@ -22,14 +22,14 @@ public class FriendDataSet implements Serializable {
     private Long syntetic_id;
 
     @ManyToMany(fetch = FetchType.EAGER) // fetch = FetchType.LAZY
-    private Set<UsersDataSet> users = new HashSet<>();
+    private Set<UserDataSet> users = new HashSet<>();
 
-
+    //Important to Hibernate!
     @SuppressWarnings("UnusedDeclaration")
     public FriendDataSet() {
     }
 
-    public FriendDataSet(UsersDataSet user, UsersDataSet friend) {
+    public FriendDataSet(UserDataSet user, UserDataSet friend) {
         this.setId(user);
         this.setFriendId(friend);
         this.setFriend(friend);
@@ -39,17 +39,17 @@ public class FriendDataSet implements Serializable {
 
     @SuppressWarnings("UnusedDeclaration")
 
-    public void setId(UsersDataSet user) { this.id = user.getId(); }
+    public void setId(UserDataSet user) { this.id = user.getId(); }
 
     public Long getFriend() { return friend_id; }
 
-    public void setFriendId(UsersDataSet friend) { this.friend_id = friend.getId(); }
+    public void setFriendId(UserDataSet friend) { this.friend_id = friend.getId(); }
 
-    public Set<UsersDataSet> getFriends() {
+    public Set<UserDataSet> getFriends() {
         return users;
     }
 
-    public void setFriend(UsersDataSet user) {
+    public void setFriend(UserDataSet user) {
         this.users.add(user);
     }
 

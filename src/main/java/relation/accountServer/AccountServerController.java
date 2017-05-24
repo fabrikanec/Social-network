@@ -1,4 +1,4 @@
-package relation.accountServer;
+package main.java.relation.accountServer;
 
 public class AccountServerController implements AccountServerControllerMBean {
     private final AccountServerI accountServer;

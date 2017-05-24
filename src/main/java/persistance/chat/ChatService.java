@@ -1,4 +1,4 @@
-package persistance.chat;
+package main.java.persistance.chat;
 
 import java.util.Collections;
 import java.util.Set;

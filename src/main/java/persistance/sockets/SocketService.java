@@ -1,4 +1,4 @@
-package persistance.sockets;
+package main.java.persistance.sockets;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;

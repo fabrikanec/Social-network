@@ -5,11 +5,12 @@ import main.java.column.repository.EventRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.cassandra.repository.MapId;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 /**
  * Created by cezar on 5/23/17.
  */
-@Component
+@Service
 public class EventRepositoryImpl implements EventRepository {
 
     private EventRepository eventRepository;

@@ -73,7 +73,7 @@ public class CassandraConfig extends AbstractCassandraConfiguration {
         return new MappingCassandraConverter(mappingContext());
     }
 
-    @Bean
+    @Bean(name = "session")
     public CassandraSessionFactoryBean session() throws ClassNotFoundException {
         CassandraSessionFactoryBean session = new CassandraSessionFactoryBean();
         session.setCluster(cluster().getObject());

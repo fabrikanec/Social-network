@@ -1,4 +1,4 @@
-package relation.templater;
+package main.java.relation.templater;
 
 import freemarker.template.Configuration;
 import freemarker.template.Template;

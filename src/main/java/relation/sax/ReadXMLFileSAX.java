@@ -1,4 +1,4 @@
-package relation.sax;
+package main.java.relation.sax;
 
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;

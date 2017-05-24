@@ -18,13 +18,15 @@ public class User implements MapIdentifiable {
 	@PrimaryKeyColumn(name = "auth_token", type = PrimaryKeyType.CLUSTERED,
 			ordinal = 1) @CassandraType(type = Name.UUID) private UUID token;
 
-	private List<Comment> userComments = new ArrayList<>();
+	private Set<Comment> userComments = new HashSet<>();
 
-	private List<Event> userEvents = new ArrayList<>();
+	private Set<Event> userEvents = new HashSet<>();
 
-	private List<Article> userArticles = new ArrayList<>();
+	private Set<Article> userArticles = new HashSet<>();
 
-	private List<Message> userMessages = new ArrayList<>();
+	private Set<Message> userMessages = new HashSet<>();
+	
+	private Set<Community> userCommunities = new HashSet<>();
 
 	@Column("user_friends")
 	private Set<UUID> userFriends = new HashSet<>();
@@ -38,7 +40,7 @@ public class User implements MapIdentifiable {
 	@Column ("lastname")
 	private String lastName;
 
-	public User(UUID userId, UUID token, List<Comment> userComments, List<Event> userEvents, List<Article> userArticles, List<Message> userMessages, Set<UUID> userFriends, String password, String firstName, String lastName) {
+	public User(UUID userId, UUID token, Set<Comment> userComments, Set<Event> userEvents, Set<Article> userArticles, Set<Message> userMessages, Set<UUID> userFriends, String password, String firstName, String lastName) {
 		this.userId = userId;
 		this.token = token;
 		this.userComments = userComments;
@@ -46,6 +48,19 @@ public class User implements MapIdentifiable {
 		this.userArticles = userArticles;
 		this.userMessages = userMessages;
 		this.userFriends = userFriends;
+		this.password = password;
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+
+	public User(UUID userId, UUID token) {
+		this.userId = userId;
+		this.token = token;
+	}
+
+	public User(UUID userId, UUID token,  String password, String firstName, String lastName) {
+		this.userId = userId;
+		this.token = token;
 		this.password = password;
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -69,38 +84,38 @@ public class User implements MapIdentifiable {
 		return this;
 	}
 
-	public List<Comment> getUserComments() {
+	public Set<Comment> getUserComments() {
 		return userComments;
 	}
 
-	public User setUserComments(List<Comment> userComments) {
+	public User setUserComments(Set<Comment> userComments) {
 		this.userComments = userComments;
 		return this;
 	}
 
-	public List<Event> getUserEvents() {
+	public Set<Event> getUserEvents() {
 		return userEvents;
 	}
 
-	public User setUserEvents(List<Event> userEvents) {
+	public User setUserEvents(Set<Event> userEvents) {
 		this.userEvents = userEvents;
 		return this;
 	}
 
-	public List<Article> getUserArticles() {
+	public Set<Article> getUserArticles() {
 		return userArticles;
 	}
 
-	public User setUserArticles(List<Article> userArticles) {
+	public User setUserArticles(Set<Article> userArticles) {
 		this.userArticles = userArticles;
 		return this;
 	}
 
-	public List<Message> getUserMessages() {
+	public Set<Message> getUserMessages() {
 		return userMessages;
 	}
 
-	public User setUserMessages(List<Message> userMessages) {
+	public User setUserMessages(Set<Message> userMessages) {
 		this.userMessages = userMessages;
 		return this;
 	}
@@ -139,6 +154,38 @@ public class User implements MapIdentifiable {
 	public User setLastName(String lastName) {
 		this.lastName = lastName;
 		return this;
+	}
+
+	public Set<Community> getUserCommunities() {
+		return userCommunities;
+	}
+
+	public void addCommunity(Community community) {
+		userCommunities.add(community);
+	}
+
+	public void addFriend(UUID friend) {
+		userFriends.add(friend);
+	}
+
+	public void addMessage(Message message) {
+		userMessages.add(message);
+	}
+
+	public void addArticle(Article article) {
+		userArticles.add(article);
+	}
+
+	public void addComment(Comment comment) {
+		userComments.add(comment);
+	}
+
+	public void addEvent(Event event) {
+		userEvents.add(event);
+	}
+
+	public void setUserCommunities(Set<Community> userCommunities) {
+		this.userCommunities = userCommunities;
 	}
 
 	@Override

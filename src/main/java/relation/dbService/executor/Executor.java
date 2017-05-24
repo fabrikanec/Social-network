@@ -1,4 +1,4 @@
-package relation.dbService.executor;
+package main.java.relation.dbService.executor;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

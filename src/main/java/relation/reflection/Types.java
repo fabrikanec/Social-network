@@ -1,4 +1,4 @@
-package relation.reflection;
+package main.java.relation.reflection;
 
 public enum Types {
     BYTE,

@@ -1,4 +1,4 @@
-package relation.messageSystem;
+package main.java.relation.messageSystem;
 
 public abstract class Message implements Executor{
     private final Address from;

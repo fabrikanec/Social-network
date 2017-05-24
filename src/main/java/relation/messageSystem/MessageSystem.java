@@ -1,4 +1,4 @@
-package relation.messageSystem;
+package main.java.relation.messageSystem;
 
 import java.util.HashMap;
 import java.util.Map;

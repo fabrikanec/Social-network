@@ -1,4 +1,4 @@
-package relation.dbService.dataSets;
+package main.java.relation.dbService.dataSets;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -6,7 +6,7 @@ import java.util.Date;
 
 @Entity
 @Table(name = "article")
-public class ArticleDataSet implements Serializable {
+public class ArticleDataSet implements Serializable { // Serializable Important to Hibernate!
     private static final Long serialVersionUID = -8706689714326132798L;
 
     @Column(name = "user_id")
@@ -26,7 +26,7 @@ public class ArticleDataSet implements Serializable {
     @Column (name = "date")
     private Date date;
 
-
+    //Important to Hibernate!
     @SuppressWarnings("UnusedDeclaration")
     public ArticleDataSet() {
     }

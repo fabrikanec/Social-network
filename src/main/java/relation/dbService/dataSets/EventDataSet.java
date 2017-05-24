@@ -1,11 +1,11 @@
-package relation.dbService.dataSets;
+package main.java.relation.dbService.dataSets;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
 @Table(name = "event")
-public class EventDataSet implements Serializable {
+public class EventDataSet implements Serializable { // Serializable Important to Hibernate!
     private static final Long serialVersionUID = -8706689714326132798L;
 
     @Column(name = "user_id")
@@ -25,7 +25,7 @@ public class EventDataSet implements Serializable {
     @Column (name = "subj")
     private String subj;
 
-
+    //Important to Hibernate!
     @SuppressWarnings("UnusedDeclaration")
     public EventDataSet() {
     }

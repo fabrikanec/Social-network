@@ -1,4 +1,4 @@
-package relation.accountServer;
+package main.java.relation.accountServer;
 
 @SuppressWarnings("UnusedDeclaration")
 public interface AccountServerControllerMBean {

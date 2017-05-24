@@ -1,6 +1,6 @@
-package relation.resourceServer;
+package main.java.relation.resourceServer;
 
-import relation.resources.TestResource;
+import main.java.relation.resource.TestResource;
 
 public class ResourceServer implements ResourceServerI {
     private TestResource resource;

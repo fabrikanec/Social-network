@@ -1,5 +1,7 @@
-package relation.dbService;
+package main.java.relation.dbService;
 
+import main.java.relation.dbService.dao.*;
+import main.java.relation.dbService.dataSets.*;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -8,13 +10,15 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.internal.SessionFactoryImpl;
 import org.hibernate.service.ServiceRegistry;
-import relation.dbService.dao.CommentDAO;
-import relation.dbService.dao.MessageDAO;
-import relation.dbService.dao.UsersDAO;
-import relation.dbService.dataSets.*;
 
 import java.sql.*;
 import java.util.Date;
+import java.util.List;
+
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
 
 class CallableStatementImp {
     Connection connection = null;
@@ -33,7 +37,7 @@ class CallableStatementImp {
         Connection con = null;
         // checking connection
         if (connection != null) {
-            System.out.println("Can't create a connection");
+            System.out.println("Can't creaate a connection");
             return connection;
         } else {
             try {
@@ -65,12 +69,13 @@ public class DBService implements DBServiceInterface {
     private Configuration getPostgresqlConfiguration() {
         Configuration configuration = new Configuration();
 
-        configuration.addAnnotatedClass(UsersDataSet.class);
+        configuration.addAnnotatedClass(UserDataSet.class);
         configuration.addAnnotatedClass(ArticleDataSet.class);
         configuration.addAnnotatedClass(FriendDataSet.class);
         configuration.addAnnotatedClass(EventDataSet.class);
         configuration.addAnnotatedClass(CommentDataSet.class);
         configuration.addAnnotatedClass(MessageDataSet.class);
+        configuration.addAnnotatedClass(CommunityDataSet.class);
 
         configuration.setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
         configuration.setProperty("hibernate.connection.driver_class", "org.postgresql.Driver");
@@ -85,18 +90,19 @@ public class DBService implements DBServiceInterface {
     private Configuration getH2Configuration() {
         Configuration configuration = new Configuration();
 
-        configuration.addAnnotatedClass(UsersDataSet.class);
+        configuration.addAnnotatedClass(UserDataSet.class);
         configuration.addAnnotatedClass(ArticleDataSet.class);
         configuration.addAnnotatedClass(FriendDataSet.class);
         configuration.addAnnotatedClass(EventDataSet.class);
         configuration.addAnnotatedClass(CommentDataSet.class);
         configuration.addAnnotatedClass(MessageDataSet.class);
+        configuration.addAnnotatedClass(CommunityDataSet.class);
 
         configuration.setProperty("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
         configuration.setProperty("hibernate.connection.driver_class", "org.h2.Driver");
         configuration.setProperty("hibernate.connection.url", "jdbc:h2:./h2db");
-        configuration.setProperty("hibernate.connection.username", "cezar");
-        configuration.setProperty("hibernate.connection.password", "cezar");
+        configuration.setProperty("hibernate.connection.username", "tully");
+        configuration.setProperty("hibernate.connection.password", "tully");
         configuration.setProperty("hibernate.show_sql", hibernate_show_sql);
         configuration.setProperty("hibernate.hbm2ddl.auto", hibernate_hbm2ddl_auto);
         return configuration;
@@ -122,12 +128,12 @@ public class DBService implements DBServiceInterface {
         return configuration.buildSessionFactory(serviceRegistry);
     }
 
-    /** UsersDataSet Logic */
-    public UsersDataSet getUserById(Long id) throws DBException {
+    /** UserDataSet Logic */
+    public UserDataSet getUserById(Long id) throws DBException {
         try {
             Session session = sessionFactory.openSession();
-            UsersDAO dao = new UsersDAO(session);
-            UsersDataSet dataSet = dao.get(id);
+            UserDAO dao = new UserDAO(session);
+            UserDataSet dataSet = dao.get(id);
             session.close();
             return dataSet;
         } catch (HibernateException e) {
@@ -135,11 +141,11 @@ public class DBService implements DBServiceInterface {
         }
     }
 
-    public UsersDataSet getUser(String login) throws DBException {
+    public UserDataSet getUser(String login) throws DBException {
         try {
             Session session = sessionFactory.openSession();
-            UsersDAO dao = new UsersDAO(session);
-            UsersDataSet dataSet = dao.get(login);
+            UserDAO dao = new UserDAO(session);
+            UserDataSet dataSet = dao.get(login);
             session.close();
             return dataSet;
         } catch (HibernateException e) {
@@ -151,7 +157,7 @@ public class DBService implements DBServiceInterface {
         try {
             Session session = sessionFactory.openSession();
             Transaction transaction = session.beginTransaction();
-            UsersDAO dao = new UsersDAO(session);
+            UserDAO dao = new UserDAO(session);
             Long id = dao.insertUser(login, password);
             transaction.commit();
             session.close();
@@ -161,13 +167,94 @@ public class DBService implements DBServiceInterface {
         }
     }
 
+    /** ArticleDataSet Logic */
+    public Long addArticle(Long id, char secure, String text, Date date) throws DBException {
+        try {
+            Session session = sessionFactory.openSession();
+            Transaction transaction = session.beginTransaction();
+            ArticleDAO dao = new ArticleDAO(session);
+            Long article_id = dao.insertArticle(id, secure, text, date);
+            transaction.commit();
+            session.close();
+            return article_id;
+        } catch (HibernateException e) {
+            throw new DBException(e);
+        }
+    }
+
+    public ArticleDataSet getArticle(Long article_id) throws DBException {
+        try {
+            Session session = sessionFactory.openSession();
+            ArticleDAO dao = new ArticleDAO(session);
+            ArticleDataSet dataSet = dao.getArticle(article_id);
+            session.close();
+            return dataSet;
+        } catch (HibernateException e) {
+            throw new DBException(e);
+        }
+    }
+
+    /** EventDataSet Logic */
+    public Long addEvent(Long id, String name, String text, String subj) throws DBException {
+        try {
+            Session session = sessionFactory.openSession();
+            Transaction transaction = session.beginTransaction();
+            EventDAO dao = new EventDAO(session);
+            Long event_id = dao.insertEvent(id, name, text, subj);
+            transaction.commit();
+            session.close();
+            return event_id;
+        } catch (HibernateException e) {
+            throw new DBException(e);
+        }
+    }
+
+    public EventDataSet getEvent(Long event_id) throws DBException {
+        try {
+            Session session = sessionFactory.openSession();
+            EventDAO dao = new EventDAO(session);
+            EventDataSet dataSet = dao.getEvent(event_id);
+            session.close();
+            return dataSet;
+        } catch (HibernateException e) {
+            throw new DBException(e);
+        }
+    }
+
+    /** FriendDataSet Logic */
+    public Long addFriend(UserDataSet user, UserDataSet friend) throws DBException {
+        try {
+            Session session = sessionFactory.openSession();
+            Transaction transaction = session.beginTransaction();
+            FriendDAO dao = new FriendDAO(session);
+            Long _friend_id = dao.addFriend(user, friend);
+            transaction.commit();
+            session.close();
+            return _friend_id;
+        } catch (HibernateException e) {
+            throw new DBException(e);
+        }
+    }
+
+    public FriendDataSet getFriend(Long id) throws DBException {
+        try {
+            Session session = sessionFactory.openSession();
+            FriendDAO dao = new FriendDAO(session);
+            FriendDataSet dataSet = dao.getFriend(id);
+            session.close();
+            return dataSet;
+        } catch (HibernateException e) {
+            throw new DBException(e);
+        }
+    }
+
     /**CommentDataSet Logic */
-    public Long addComment(Long id, String text) throws DBException {
+    public Long addComment(Long id, Long id_article, Long id_event, String text) throws DBException {
         try {
             Session session = sessionFactory.openSession();
             Transaction transaction = session.beginTransaction();
             CommentDAO dao = new CommentDAO(session);
-            Long comment_id = dao.insertComment(id, text);
+            Long comment_id = dao.insertComment(id, id_article, id_event, text);
             transaction.commit();
             session.close();
             return comment_id;
@@ -238,7 +325,47 @@ public class DBService implements DBServiceInterface {
             return 0L;
         }
     }
+    
+    /** CommunityDataSet Logic */
+    public Long addCommunity(String name) throws DBException {
+        try {
+            Session session = sessionFactory.openSession();
+            Transaction transaction = session.beginTransaction();
+            CommunityDAO dao = new CommunityDAO(session);
+            Long id = dao.insertCommunity(name);
+            transaction.commit();
+            session.close();
+            return id;
+        } catch (HibernateException e) {
+            throw new DBException(e);
+        }
+    }
 
+    public Long addUser(UserDataSet user, String communityName) throws DBException {
+        try {
+            Session session = sessionFactory.openSession();
+            Transaction transaction = session.beginTransaction();
+            CommunityDAO dao = new CommunityDAO(session);
+            Long user_id =  dao.addUser(user, communityName);
+            transaction.commit();
+            session.close();
+            return user_id;
+        } catch (HibernateException e) {
+            throw new DBException(e);
+        }
+    }
+
+    public List<CommunityDataSet> getUsers(String com_name) throws DBException {
+        try {
+            Session session = sessionFactory.openSession();
+            CommunityDAO dao = new CommunityDAO(session);
+            List<CommunityDataSet> dataSet = dao.getUsers(com_name);
+            session.close();
+            return dataSet;
+        } catch (HibernateException e) {
+            throw new DBException(e);
+        }
+    }
 
     public Long count_comm() throws DBException {
         CallableStatementImp callableStatement = new CallableStatementImp();
@@ -254,7 +381,8 @@ public class DBService implements DBServiceInterface {
             } else {
                 rs.next();
                 String res =  (rs.getString(1));
-                return Long.parseLong(res);
+                Long resultCount = Long.parseLong(res);
+                return resultCount;
             }
         } catch (Exception e) {
             System.out.println(e.toString());

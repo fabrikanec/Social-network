@@ -1,6 +1,7 @@
-package relation.messageSystem;
+package main.java.relation.messageSystem;
 
-import relation.dbService.DBServiceInterface;
+
+import main.java.relation.dbService.DBServiceInterface;
 
 public abstract class MessageToDB extends Message {
     public MessageToDB(Address from, Address to) {

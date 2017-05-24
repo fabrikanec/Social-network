@@ -1,4 +1,4 @@
-package documentKeyValue;
+package main.java.documentKeyValue;
 
 import java.util.*;
 
@@ -20,18 +20,6 @@ public class Main {
                 break;
             case "list":
                 cmd_type = Commands.Opcodes.LIST;
-                break;
-            case "buymusic":
-                cmd_type = Commands.Opcodes.BUY_MUSIC;
-                break;
-            case "seeAcqmusics":
-                cmd_type = Commands.Opcodes.SEE_ACQ_MUSICS;
-                break;
-            case "updatemoney":
-                cmd_type = Commands.Opcodes.UPDATE_MONEY;
-                break;
-            case "findmusics":
-                cmd_type = Commands.Opcodes.FIND_MUSICS;
                 break;
             default:
                 System.err.println("Error: ``" + cmd + "`` not found.");

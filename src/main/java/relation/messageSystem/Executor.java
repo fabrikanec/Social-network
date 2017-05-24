@@ -1,6 +1,7 @@
-package relation.messageSystem;
+package main.java.relation.messageSystem;
 
-import relation.dbService.DBServiceInterface;
+
+import main.java.relation.dbService.DBServiceInterface;
 
 /**
  * Instruction set.

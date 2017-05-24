@@ -1,6 +1,8 @@
-package relation.dbService.dao;
+package main.java.relation.dbService.dao;
 
-import relation.dbService.dataSets.MessageDataSet;
+import main.java.relation.dbService.dataSets.ArticleDataSet;
+import main.java.relation.dbService.dataSets.CommentDataSet;
+import main.java.relation.dbService.dataSets.MessageDataSet;
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;

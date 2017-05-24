@@ -11,11 +11,12 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 /**
  * Created by cezar on 5/23/17.
  */
-@Component
+@Service
 public class ArticleRepositoryImpl implements ArticleRepository {
 
     private ArticleRepository articleRepository;

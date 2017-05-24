@@ -1,4 +1,4 @@
-package persistance.chat;
+package main.java.persistance.chat;
 
 import org.eclipse.jetty.websocket.api.Session;
 import org.eclipse.jetty.websocket.api.annotations.OnWebSocketClose;

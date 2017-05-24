@@ -1,4 +1,4 @@
-package persistance.chat;
+package main.java.persistance.chat;
 
 import org.eclipse.jetty.websocket.servlet.WebSocketServlet;
 import org.eclipse.jetty.websocket.servlet.WebSocketServletFactory;

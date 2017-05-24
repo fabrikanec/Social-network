@@ -1,4 +1,4 @@
-package relation.sax;
+package main.java.relation.sax;
 
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
@@ -8,7 +8,7 @@ import org.xml.sax.helpers.DefaultHandler;
 public class LogSaxHandler extends DefaultHandler {
     private static final String CLASSNAME = "class";
 
-    private boolean inElement;
+    private boolean inElement = false;
 
     public void startDocument() throws SAXException {
         System.out.println("Start document");

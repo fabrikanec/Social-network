@@ -1947,7 +1947,7 @@ sub start {
         my $n = 0;
         for my $field (@$fields) {
             my $name = $field->{name};
-            print $hfh "#   define JSIGAR_FIELDS_\U${class}_EngineDB $n\n";
+            print $hfh "#   define JSIGAR_FIELDS_\U${class}_${name} $n\n";
             $n++;
         }
         print $hfh "#   define JSIGAR_FIELDS_\U${class}_MAX $n\n";
@@ -2402,7 +2402,7 @@ EOF
         $self->add_method($class, $name);
 
         print $fh <<EOF;
-static VALUE rb_sigar_${class}_EngineDB(VALUE self)
+static VALUE rb_sigar_${class}_${name}(VALUE self)
 {
     $func->{sigar_type} *$cname;
     Data_Get_Struct(self, $func->{sigar_type}, $cname);

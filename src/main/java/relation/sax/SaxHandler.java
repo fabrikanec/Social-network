@@ -1,9 +1,9 @@
-package relation.sax;
+package main.java.relation.sax;
 
+import main.java.relation.reflection.ReflectionHelper;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
-import relation.reflection.ReflectionHelper;
 
 @SuppressWarnings("UnusedDeclaration")
 public class SaxHandler extends DefaultHandler {

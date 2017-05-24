@@ -1,4 +1,4 @@
-package relation.messageSystem;
+package main.java.relation.messageSystem;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

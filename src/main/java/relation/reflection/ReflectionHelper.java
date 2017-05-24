@@ -1,4 +1,4 @@
-package relation.reflection;
+package main.java.relation.reflection;
 
 import java.lang.reflect.Field;
 

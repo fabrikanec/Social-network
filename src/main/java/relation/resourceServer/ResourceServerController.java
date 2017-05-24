@@ -1,4 +1,4 @@
-package relation.resourceServer;
+package main.java.relation.resourceServer;
 
 public class ResourceServerController implements ResourceServerControllerMBean {
     private final ResourceServerI resourceServer;

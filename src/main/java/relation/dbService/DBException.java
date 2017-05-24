@@ -1,4 +1,4 @@
-package relation.dbService;
+package main.java.relation.dbService;
 
 
 public class DBException extends Exception {

@@ -1,6 +1,7 @@
-package relation.messageSystem;
+package main.java.relation.messageSystem;
 
-import relation.dbService.DBServiceInterface;
+import main.java.relation.accountServer.AccountServer;
+import main.java.relation.dbService.DBServiceInterface;
 
 public class MessageAuthentificate extends MessageToDB {
     private String name;
@@ -16,9 +17,9 @@ public class MessageAuthentificate extends MessageToDB {
     //write meth's to DBService
     public void exec(DBServiceInterface dbService) {
         /*
-        Account result = relation.dbService.auth(name, password);
+        Account result = dbService.auth(name, password);
         Message back = new MessageAuthentificate(getTo(), getFrom(), sessionId, result);
-        relation.dbService.getMessageSystem().sendMessage(back);
+        dbService.getMessageSystem().sendMessage(back);
         */
     }
 
