@@ -19,12 +19,12 @@ public class MessageDAO {
         this.session = session;
     }
 
-    public MessageDataSet getMessage(Long message_id) throws HibernateException {
+    public MessageDataSet getMessage(Long id) throws HibernateException {
         Criteria criteria = session.createCriteria(MessageDataSet.class);
-        return ((MessageDataSet) criteria.add(Restrictions.eq("message_id", message_id)).uniqueResult());
+        return ((MessageDataSet) criteria.add(Restrictions.eq("messageId", id)).uniqueResult());
     }
 
-    public Long insertMessage(Long id, Boolean receaverMsgDeletedFlag, Boolean posterMsgDeletedFlag, String text, Date date) throws HibernateException {
-        return (Long) session.save(new MessageDataSet(id, receaverMsgDeletedFlag, posterMsgDeletedFlag, text, date));
+    public Long insertMessage(Long userId, Boolean receaverMsgDeletedFlag, Boolean posterMsgDeletedFlag, String text, Date date) throws HibernateException {
+        return (Long) session.save(new MessageDataSet(userId, receaverMsgDeletedFlag, posterMsgDeletedFlag, text, date));
     }
 }

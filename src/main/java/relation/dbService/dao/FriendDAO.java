@@ -16,12 +16,12 @@ public class FriendDAO {
         this.session = session;
     }
 
-    public FriendDataSet getFriend(Long id) throws HibernateException {
+    public Long getFriend(Long userId) throws HibernateException {
         Criteria criteria = session.createCriteria(FriendDataSet.class);
-        return ((FriendDataSet) criteria.add(Restrictions.eq("id", id)).uniqueResult());
+        return ((Long) criteria.add(Restrictions.eq("userId", userId)).uniqueResult());
     }
 
-    public Long addFriend(UserDataSet user, UserDataSet friend) throws HibernateException {
+    public Long addFriend(Long user, Long friend) throws HibernateException {
         return (Long) session.save(new FriendDataSet(user, friend));
     }
 }

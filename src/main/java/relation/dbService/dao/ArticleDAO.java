@@ -16,12 +16,12 @@ public class ArticleDAO {
         this.session = session;
     }
 
-    public ArticleDataSet getArticle(Long article_id) throws HibernateException {
+    public ArticleDataSet getArticle(Long id) throws HibernateException {
         Criteria criteria = session.createCriteria(ArticleDataSet.class);
-        return ((ArticleDataSet) criteria.add(Restrictions.eq("article_id", article_id)).uniqueResult());
+        return ((ArticleDataSet) criteria.add(Restrictions.eq("articleId", id)).uniqueResult());
     }
 
-    public Long insertArticle(Long id, String publisher, String title, String text) throws HibernateException {
-        return (Long) session.save(new ArticleDataSet(id, publisher, title, text));
+    public Long insertArticle(String publisher, String title, String text) throws HibernateException {
+        return (Long) session.save(new ArticleDataSet(publisher, title, text));
     }
 }

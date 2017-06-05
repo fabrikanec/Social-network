@@ -18,12 +18,12 @@ public class EventDAO {
         this.session = session;
     }
 
-    public EventDataSet getEvent(Long event_id) throws HibernateException {
+    public EventDataSet getEvent(Long id) throws HibernateException {
         Criteria criteria = session.createCriteria(EventDataSet.class);
-        return ((EventDataSet) criteria.add(Restrictions.eq("event_id", event_id)).uniqueResult());
+        return ((EventDataSet) criteria.add(Restrictions.eq("eventId", id)).uniqueResult());
     }
 
-    public Long insertEvent(Long id, String name, String text, String subj) throws HibernateException {
-        return (Long) session.save(new EventDataSet(id, name, text, subj));
+    public Long insertEvent(Long userId, String name, String text, String subj) throws HibernateException {
+        return (Long) session.save(new EventDataSet(userId, name, text, subj));
     }
 }

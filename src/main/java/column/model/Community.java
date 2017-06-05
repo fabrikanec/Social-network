@@ -21,10 +21,9 @@ public class Community {
 
     private Set<UUID> users = new HashSet<>();
 
-    public Community(UUID community_id, String community_name, Set<UUID> users) {
+    public Community(UUID community_id, String community_name) {
         this.community_id = community_id;
         this.community_name = community_name;
-        this.users = users;
     }
 
     public UUID getCommunity_id() {

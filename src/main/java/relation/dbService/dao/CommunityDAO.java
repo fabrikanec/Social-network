@@ -18,16 +18,19 @@ public class CommunityDAO {
         this.session = session;
     }
 
-    public Set<CommunityDataSet> getUsers(String community_name) throws HibernateException {
+    public Set<Long> getUsers(String communityName) throws HibernateException { //TODO comm to long
         Criteria criteria = session.createCriteria(CommunityDataSet.class);
-        Set<CommunityDataSet> res = new HashSet<>();
-        res.add((CommunityDataSet) criteria.add(Restrictions.eq("community_name", community_name)).list().get(0));
-        res.add((CommunityDataSet) criteria.add(Restrictions.eq("community_name", community_name)).list().get(1));
+        Set<Long> res = new HashSet<>();
+        res.add((Long) criteria.add(Restrictions.eq("communityId", communityName)).list().get(0));
+        res.add((Long) criteria.add(Restrictions.eq("communityId", communityName)).list().get(1));
         return res;
     }
 
-    public Long addUser(UserDataSet user, String communityName) throws HibernateException {
-        return (Long) session.save(new CommunityDataSet(user, communityName));
+    public void addUser(Long user, String communityName) throws HibernateException {
+        Criteria criteria = session.createCriteria(CommunityDataSet.class);
+        CommunityDataSet community = (CommunityDataSet) criteria.add(Restrictions.eq("communityName", communityName));
+        community.setUser(user);
+        session.update(community);
     }
 
     public Long insertCommunity(String name) throws HibernateException {

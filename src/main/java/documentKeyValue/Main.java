@@ -3,6 +3,7 @@ package main.java.documentKeyValue;
 import java.io.*;
 import java.util.*;
 
+import com.datastax.driver.core.utils.UUIDs;
 import com.mongodb.DB;
 import com.mongodb.MongoClient;
 import redis.clients.jedis.*;
@@ -66,5 +67,6 @@ public class Main {
 
     public static void main(String... args) {
         new Main().run();
+//        UUIDs.unixTimestamp(UUIDs.timeBased())
     }
 }

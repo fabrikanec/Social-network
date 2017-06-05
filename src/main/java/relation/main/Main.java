@@ -33,8 +33,7 @@ import javax.management.MBeanServer;
 import javax.management.ObjectName;
 import java.io.*;
 import java.lang.management.ManagementFactory;
-import java.util.Properties;
-import java.util.UUID;
+import java.util.*;
 
 import main.java.relation.account.AccountService;
 import main.java.relation.dbService.DBService;
@@ -153,9 +152,29 @@ public class Main {
         testDB(dbService, accountService);
     }
 
+
     public static void testDB(DBService dbService, AccountService accountService) throws DBException{
+        Set<Long> users = new HashSet<>();
+        for (int i = 0; i <= 0; i++) {
+            Long userId = accountService.addNewUser(new UserProfile("login" + i, "password" + i));
+            Long articleId = accountService.addArticle("login" + i, "title" + i, "text" + i);
+            Long eventId = accountService.addEvent(userId, "name" + i, "text" + i, "subj" + i);
+            Long commentId = accountService.addComment(userId, articleId, eventId, "text" + i );
+            Long communityId = accountService.addNewCommunity("community" + i);
+            users.forEach(x -> {
+                try { accountService.addFriend(userId, x); }
+                catch (DBException e) {
+                    e.printStackTrace();
+                }
+            });
+            if (users.size() < 100) {
+                users.add(userId);
+            }
+            Long messageId = accountService.addMessage(userId, false,
+                                                        false, "text" + i, new Date());
+        }
         //insert to db
-        Long id = accountService.addNewUser(new UserProfile("todd", "Valio"));
+        /*Long id = accountService.addNewUser(new UserProfile("todd", "Valio"));
         System.out.println(accountService.getUserProfileByLogin("todd").getPass());
         Long id1 = accountService.addNewUser(new UserProfile("Valio", "Todd"));
 
@@ -167,11 +186,12 @@ public class Main {
         System.out.println(accountService.getArticleText(id_article));
         System.out.println(accountService.getEventText(id_event));
 
-        Long _id_event = accountService.addEvent(id, "name", "TOO", "some subj");
+        Long Id_event = accountService.addEvent(id, "name", "TOO", "some subj");
         System.out.println(accountService.getArticleText(id_article1));
-        System.out.println(accountService.getEventText(_id_event));
+        System.out.println(accountService.getEventText(Id_event));
         System.out.println(accountService.getEventText(id_event));
-        System.out.println(accountService.getArticleText(id_article));
+        System.out.println(accountService.getArticleText(id_article));*/
+
 /*
         Long id_comment = accountService.addComment(id, id_article, id_event, "kekich");
         Long id_comment1 = accountService.addComment(id, id_article, id_event, "lolich");

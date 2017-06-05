@@ -7,58 +7,55 @@ import java.util.Set;
 import java.util.UUID;
 
 @Entity
-@Table(name = "friend")
+@Table(name = "friend") //TODO rearch
 public class FriendDataSet implements Serializable {
     private static final long serialVersionUID = -8706689714326132798L;
 
     @Id
     @Column(name = "syntetic_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long syntetic_id;
+    private Long synteticId;
 
     @Column(name = "user_id")
-    private Long id;
+    private Long userId;
 
     @Column(name = "friend_id")
-    private Long friend_id;
+    private Long friendId;
 
-    @ManyToMany(fetch = FetchType.EAGER) // fetch = FetchType.LAZY
-    private Set<UserDataSet> users = new HashSet<>();
+    @ElementCollection( targetClass = Long.class )
+    //@ManyToMany(fetch = FetchType.EAGER) // fetch = FetchType.LAZY
+    private Set<Long> users = new HashSet<>();
 
-    //Important to Hibernate!
-    @SuppressWarnings("UnusedDeclaration")
     public FriendDataSet() {
     }
 
-    public FriendDataSet(UserDataSet user, UserDataSet friend) {
-        this.setId(user);
-        this.setFriendId(friend);
-        this.setFriend(friend);
+    public FriendDataSet(Long userId, Long friendId) {
+        this.userId = userId;
+        this.friendId = friendId;
+        this.users.add(friendId);
 
     }
 
 
-    @SuppressWarnings("UnusedDeclaration")
+    public void setId(Long userId) { this.userId = userId; }
 
-    public void setId(UserDataSet user) { this.id = user.getId(); }
+    public Long getFriend() { return friendId; }
 
-    public Long getFriend() { return friend_id; }
+    public void setFriendId(UserDataSet friend) { this.friendId = friend.getId(); }
 
-    public void setFriendId(UserDataSet friend) { this.friend_id = friend.getId(); }
-
-    public Set<UserDataSet> getFriends() {
+    public Set<Long> getFriends() {
         return users;
     }
 
-    public void setFriend(UserDataSet user) {
-        this.users.add(user);
+    public void setFriend(Long userId) {
+        this.users.add(userId);
     }
 
 
     public String toString() {
         return "FriendDataSet{" +
-                "id=" + id +
-                ", friend_id='" + friend_id + '\'' +
+                "id=" + userId +
+                ", friend_id='" + friendId + '\'' +
                 '}';
     }
 }

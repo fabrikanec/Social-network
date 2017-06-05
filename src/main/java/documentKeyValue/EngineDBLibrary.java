@@ -1,6 +1,7 @@
 package main.java.documentKeyValue;
 
 import com.mongodb.*;
+import com.mongodb.client.MongoDatabase;
 import redis.clients.jedis.Jedis;
 
 import java.sql.*;
@@ -15,7 +16,8 @@ public class EngineDBLibrary {
     EngineDBLibrary(String url, Integer port) {
         this.jedis = new Jedis(url);
         this.mongo = new MongoClient(url, port);
-        this.db = mongo.getDB("EngineDB"); //cezar cezar
+        this.db = mongo.getDB("DBName"); //cezar cezar //TODO replace to
+        //MongoDatabase dbm = mongo.getDatabase("EngineDB");
     }
 
 
@@ -27,7 +29,7 @@ public class EngineDBLibrary {
                 System.out.println("Duplicate.");
                 return null;
             }
-            DBCollection table = db.getCollection("articles");
+            DBCollection table = db.getCollection("Articles");
             BasicDBObject document = new BasicDBObject();
             document.put("article_id", article_id);
             document.put("publisher", publisher);
@@ -46,7 +48,7 @@ public class EngineDBLibrary {
         Integer res;
 
         try {
-            DBCollection table = db.getCollection("articles");
+            DBCollection table = db.getCollection("Articles");
             BasicDBObject query = new BasicDBObject();
             query.put("title", title);
             BasicDBObject newDocument = new BasicDBObject();
@@ -69,7 +71,7 @@ public class EngineDBLibrary {
         Integer res;
 
         try {
-            DBCollection table = db.getCollection("articles");
+            DBCollection table = db.getCollection("Articles");
             BasicDBObject searchQuery = new BasicDBObject();
             searchQuery.put("article_id", article_id);
 
@@ -83,7 +85,7 @@ public class EngineDBLibrary {
 
     public void viewArticles(Long article_id) throws Exception {
         try {
-            DBCollection table = db.getCollection("articles");
+            DBCollection table = db.getCollection("Articles");
             BasicDBObject searchQuery = new BasicDBObject();
             searchQuery.put("article_id", article_id);
             DBCursor cursor = table.find(searchQuery);
@@ -107,7 +109,7 @@ public class EngineDBLibrary {
                 System.out.println("Duplicate.");
                 return null;
             }
-            DBCollection table = db.getCollection("events");
+            DBCollection table = db.getCollection("Event");
             BasicDBObject document = new BasicDBObject();
             document.put("event_id", event_id);
             document.put("user_id", user_id);
@@ -128,7 +130,7 @@ public class EngineDBLibrary {
         Integer res;
 
         try {
-            DBCollection table = db.getCollection("events");
+            DBCollection table = db.getCollection("Event");
             BasicDBObject query = new BasicDBObject();
             query.put("name", name);
             BasicDBObject newDocument = new BasicDBObject();
@@ -152,7 +154,7 @@ public class EngineDBLibrary {
         Integer res;
 
         try {
-            DBCollection table = db.getCollection("events");
+            DBCollection table = db.getCollection("Event");
             BasicDBObject searchQuery = new BasicDBObject();
             searchQuery.put("event_id", id);
 
@@ -167,12 +169,13 @@ public class EngineDBLibrary {
     public void viewEvents(Long id) throws Exception {
 
         try {
-            DBCollection table = db.getCollection("events");
+            DBCollection table = db.getCollection("Event");
             BasicDBObject searchQuery = new BasicDBObject();
             searchQuery.put("event_id", id);
             DBCursor cursor = table.find(searchQuery);
-
+            System.out.println("lol");
             while (cursor.hasNext()) {
+                System.out.println("kek");
                 DBObject event = cursor.next();
                 System.out.println(event);
                 jedis.set(String.valueOf(event.hashCode()), String.valueOf(event));

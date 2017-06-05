@@ -9,7 +9,7 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "users")
-public class UserDataSet implements Serializable { // Serializable Important to Hibernate!
+public class UserDataSet implements Serializable {
     private static final long serialVersionUID = -8706689714326132798L;
 
     @Id
@@ -29,14 +29,14 @@ public class UserDataSet implements Serializable { // Serializable Important to 
     @Column (name = "surname")
     private String surname;
 
-    @ManyToMany(targetEntity = CommunityDataSet.class, mappedBy="users") //, fetch = FetchType.LAZY
+    @ElementCollection( targetClass = Long.class )
+    //@ManyToMany(mappedBy="users") //, fetch = FetchType.LAZY
     private Set<Long> communities = new HashSet<>();
 
-    @ManyToMany(targetEntity = CommunityDataSet.class, mappedBy="users")
+    @ElementCollection( targetClass = Long.class )
+    //@ManyToMany(mappedBy="users")
     private Set<Long> friends = new HashSet<>();
 
-    //Important to Hibernate!
-    @SuppressWarnings("UnusedDeclaration")
     public UserDataSet() {
     }
 
@@ -48,7 +48,6 @@ public class UserDataSet implements Serializable { // Serializable Important to 
         this.setSurname(surname);
     }
 
-    @SuppressWarnings("UnusedDeclaration")
     public UserDataSet(Long id, String login, String password) {
         //this.setId(id);
         this.setLogin(login);
@@ -65,7 +64,6 @@ public class UserDataSet implements Serializable { // Serializable Important to 
         this.setSurname("");
     }
 
-    @SuppressWarnings("UnusedDeclaration")
 
     public Long getId() {
         return id;
@@ -121,12 +119,12 @@ public class UserDataSet implements Serializable { // Serializable Important to 
         this.friends = friends;
     }
 
-    public void setCommunity(Long community_id) {
-        this.communities.add(community_id);
+    public void setCommunity(Long communityId) {
+        this.communities.add(communityId);
     }
 
-    public void setFriend(Long friend_id) {
-        this.friends.add(friend_id);
+    public void setFriend(Long friendId) {
+        this.friends.add(friendId);
     }
 
 

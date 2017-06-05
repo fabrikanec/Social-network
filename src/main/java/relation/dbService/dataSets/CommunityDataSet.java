@@ -8,64 +8,63 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "community")
-public class CommunityDataSet implements Serializable { // Serializable Important to Hibernate!
+public class CommunityDataSet implements Serializable {
     private static final long serialVersionUID = -8706689714326132798L;
 
     @Id
     @Column(name = "community_id", updatable = false)
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long community_id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long communityId;
 
     @Column(name = "community_name")
-    private String community_name;
+    private String communityName;
 
-    @ManyToMany(fetch = FetchType.EAGER) // fetch = FetchType.LAZY
+    @ElementCollection( targetClass = Long.class )
+    //@ManyToMany(fetch = FetchType.EAGER) // fetch = FetchType.LAZY
     //@JoinTable(name = "users_communities", joinColumns = @JoinColumn(name = "community_name"),
             //inverseJoinColumns = @JoinColumn(name = "user_id"))
-    private Set<UserDataSet> users = new HashSet<>();
+    private Set<Long> users = new HashSet<>();
 
-    //Important to Hibernate!
-    @SuppressWarnings("UnusedDeclaration")
     public CommunityDataSet() {
     }
 
-    public CommunityDataSet(String community_name) {
+    public CommunityDataSet(String communityName) {
         //this.setId(id);
-        //this.setCommunityId(community_id);
-        this.setCommunityName(community_name);
+        //this.setCommunityId(communityId);
+        this.setCommunityName(communityName);
     }
 
-    public CommunityDataSet(UserDataSet user, String community_name) {
-        this.setUser(user);
-        //this.setCommunityId(community_id);
-        this.setCommunityName(community_name);
+    public CommunityDataSet(Long user, String communityName) {
+        this.users.add(user);
+        //this.setCommunityId(communityId);
+        this.communityName = communityName;
     }
 
     public Long getCommunityId() {
-        return community_id;
+        return communityId;
     }
 
-    public void setCommunityId(Long community_id) {
-        this.community_id = community_id;
+    public void setCommunityId(Long communityId) {
+        this.communityId = communityId;
     }
 
-    public String getCommunityName() { return community_name;}
+    public String getCommunityName() { return communityName;}
 
-    public void setCommunityName(String name) { this.community_name = name;}
+    public void setCommunityName(String name) { this.communityName = name;}
 
-    public Set<UserDataSet> getUsers() {
+    public Set<Long> getUsers() {
         return users;
     }
 
     //public void setUsers(Set<Long> users) { this.users = users; }
 
-    public void setUser(UserDataSet user) {
-        this.users.add(user);
+    public void setUser(Long user_id) {
+        this.users.add(user_id);
     }
 
     public String toString() {
         return "CommunityDataSet{" +
-                ", community_id='" + community_id + '\'' +
+                ", community_id='" + communityId + '\'' +
                 '}';
     }
 }

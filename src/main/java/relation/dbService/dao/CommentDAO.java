@@ -18,12 +18,12 @@ public class CommentDAO {
         this.session = session;
     }
 
-    public CommentDataSet getComment(Long comment_id) throws HibernateException {
+    public CommentDataSet getComment(Long id) throws HibernateException {
         Criteria criteria = session.createCriteria(CommentDataSet.class);
-        return ((CommentDataSet) criteria.add(Restrictions.eq("comment_id", comment_id)).uniqueResult());
+        return ((CommentDataSet) criteria.add(Restrictions.eq("commentId", id)).uniqueResult());
     }
 
-    public Long insertComment(Long comment_id, Long user_id, Long article_id, Long event_id, String text) throws HibernateException {
-        return (Long) session.save(new CommentDataSet(comment_id, user_id, article_id, event_id, text));
+    public Long insertComment(Long userId, Long articleId, Long eventId, String text) throws HibernateException {
+        return (Long) session.save(new CommentDataSet(userId, articleId, eventId, text));
     }
 }

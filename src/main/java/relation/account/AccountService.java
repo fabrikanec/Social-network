@@ -57,12 +57,12 @@ public class AccountService {
     }
 
     /** ArticleDataSet Logic */
-    public Long addArticle(Long article_id, String publisher, String title, String text) throws DBException {
-        return  dbService.addArticle(article_id, publisher, title, text);
+    public Long addArticle(String publisher, String title, String text) throws DBException {
+        return  dbService.addArticle(publisher, title, text);
     }
 
-    public String getArticleText(Long article_id) throws DBException {
-        ArticleDataSet dataSet = dbService.getArticle(article_id);
+    public String getArticleText(Long articleId) throws DBException {
+        ArticleDataSet dataSet = dbService.getArticle(articleId);
         if (dataSet != null) {
             return dataSet.getText();
         } else {
@@ -75,8 +75,8 @@ public class AccountService {
         return  dbService.addEvent(id, name, text, subj);
     }
 
-    public String getEventText(Long event_id) throws DBException {
-        EventDataSet dataSet = dbService.getEvent(event_id);
+    public String getEventText(Long eventId) throws DBException {
+        EventDataSet dataSet = dbService.getEvent(eventId);
         if (dataSet != null) {
             return dataSet.getText();
         } else {
@@ -85,26 +85,21 @@ public class AccountService {
     }
 
     /** FriendDataSet Logic */
-    public Long addFriend(UserDataSet user, UserDataSet friend) throws DBException {
+    public Long addFriend(Long user, Long friend) throws DBException {
         return dbService.addFriend(user, friend);
     }
 
-    public Long getFriend(Long friend_id) throws DBException {
-        FriendDataSet dataSet = dbService.getFriend(friend_id);
-        if (dataSet != null) {
-            return dataSet.getFriend();
-        } else {
-            return null;
-        }
+    public Long getFriend(Long friendId) throws DBException {
+        return dbService.getFriend(friendId);
     }
 
     /** CommentDataSet Logic */
-    public Long addComment(Long comment_id, Long id, Long article_id, Long event_id, String text) throws DBException {
-        return  dbService.addComment(comment_id, id, article_id, event_id, text);
+    public Long addComment(Long userId, Long articleId, Long eventId, String text) throws DBException {
+        return  dbService.addComment(userId, articleId, eventId, text);
     }
 
-    public String getCommentText(Long comment_id) throws DBException {
-        CommentDataSet dataSet = dbService.getComment(comment_id);
+    public String getCommentText(Long commentId) throws DBException {
+        CommentDataSet dataSet = dbService.getComment(commentId);
         if (dataSet != null) {
             return dataSet.getText();
         } else {
@@ -117,8 +112,8 @@ public class AccountService {
         return  dbService.addMessage(id, receaverMsgDeletedFlag, posterMsgDeletedFlag, text, date);
     }
 
-    public String getMessageText(Long message_id) throws DBException {
-        MessageDataSet dataSet = dbService.getMessage(message_id);
+    public String getMessageText(Long messageId) throws DBException {
+        MessageDataSet dataSet = dbService.getMessage(messageId);
         if (dataSet != null) {
             return dataSet.getText();
         } else {
@@ -135,12 +130,12 @@ public class AccountService {
         return dbService.addCommunity(name);
     }
 
-    public Long addUser(UserDataSet user, String community_name) throws DBException {
-        return dbService.addUser(user, community_name);
+    public void addUser(Long user, String communityName) throws DBException {
+        dbService.addUser(user, communityName);
     }
 
-    public Set<CommunityDataSet> getUsers(String com_name) throws DBException {
-        return dbService.getUsers(com_name);
+    public Set<Long> getUsers(String comName) throws DBException {
+        return dbService.getUsers(comName);
 
     }
 

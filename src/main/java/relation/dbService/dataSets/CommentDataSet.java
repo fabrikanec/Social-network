@@ -9,22 +9,22 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "comment")
-public class CommentDataSet implements Serializable { // Serializable Important to Hibernate!
+public class CommentDataSet implements Serializable {
     private static final long serialVersionUID = -8706689714326132798L;
 
     @Id
     @Column(name = "comment_id", unique = true, updatable = false)
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long comment_id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long commentId;
 
     @Column(name = "user_id")
-    private Long id;
+    private Long userId;
 
     @Column(name = "article_id")
-    private Long article_id;
+    private Long articleId;
 
     @Column (name = "event_id")
-    private Long event_id;
+    private Long eventId;
 
     @Column (name = "text")
     private String text;
@@ -32,11 +32,11 @@ public class CommentDataSet implements Serializable { // Serializable Important 
     public CommentDataSet() {
     }
 
-    public CommentDataSet(Long comment_id, Long id, Long article_id, Long event_id, String text) {
-        this.comment_id = comment_id;
-        this.id = id;
-        this.article_id = article_id;
-        this.event_id = event_id;
+    public CommentDataSet(Long userId, Long articleId, Long eventId, String text) {
+        this.commentId = commentId;
+        this.userId = userId;
+        this.articleId = articleId;
+        this.eventId = eventId;
         this.text = text;
     }
 
@@ -44,36 +44,36 @@ public class CommentDataSet implements Serializable { // Serializable Important 
         return serialVersionUID;
     }
 
-    public Long getComment_id() {
-        return comment_id;
+    public Long getCommentId() {
+        return commentId;
     }
 
-    public void setComment_id(Long comment_id) {
-        this.comment_id = comment_id;
+    public void setCommentId(Long commentId) {
+        this.commentId = commentId;
     }
 
-    public Long getId() {
-        return id;
+    public Long getUserId() {
+        return userId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setUserId(Long id) {
+        this.userId = id;
     }
 
-    public Long getArticle_id() {
-        return article_id;
+    public Long getArticleId() {
+        return articleId;
     }
 
-    public void setArticle_id(Long article_id) {
-        this.article_id = article_id;
+    public void setArticleId(Long articleId) {
+        this.articleId = articleId;
     }
 
-    public Long getEvent_id() {
-        return event_id;
+    public Long getEventId() {
+        return eventId;
     }
 
-    public void setEvent_id(Long event_id) {
-        this.event_id = event_id;
+    public void setEventId(Long eventId) {
+        this.eventId = eventId;
     }
 
     public String getText() {
@@ -87,8 +87,8 @@ public class CommentDataSet implements Serializable { // Serializable Important 
     @Override
     public String toString() {
         return "CommentDataSet{" +
-                "id=" + id +
-                ", comment_id='" + comment_id + '\'' +
+                "user_id=" + userId +
+                ", comment_id='" + commentId + '\'' +
                 '}';
     }
 }

@@ -9,13 +9,14 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "article")
-public class ArticleDataSet implements Serializable { // Serializable Important to Hibernate!
+public class ArticleDataSet implements Serializable {
     private static final long serialVersionUID = -8706689714326132798L;
 
     @Id
     @Column(name = "article_id", unique = true, updatable = false)
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long article_id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long articleId;
+
     @Column(name = "publisher")
     private String publisher;
 
@@ -25,8 +26,7 @@ public class ArticleDataSet implements Serializable { // Serializable Important 
     @Column(name = "text")
     private String text;
 
-    public ArticleDataSet(Long article_id, String publisher, String title, String text) {
-        this.article_id = article_id;
+    public ArticleDataSet(String publisher, String title, String text) {
         this.publisher = publisher;
         this.title = title;
         this.text = text;
@@ -47,12 +47,12 @@ public class ArticleDataSet implements Serializable { // Serializable Important 
         this.publisher = publisher;
     }
 
-    public Long getArticle_id() {
-        return article_id;
+    public Long getArticleId() {
+        return articleId;
     }
 
-    public void setArticle_id(Long article_id) {
-        this.article_id = article_id;
+    public void setArticleId(Long articleId) {
+        this.articleId = articleId;
     }
 
     public String getText() {

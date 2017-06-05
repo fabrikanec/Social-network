@@ -8,6 +8,7 @@ import com.datastax.driver.core.querybuilder.Select;
 import com.datastax.driver.core.utils.UUIDs;
 import main.java.column.config.CassandraConfig;
 import main.java.column.model.*;
+import org.apache.commons.collections4.iterators.IteratorEnumeration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cassandra.core.cql.CqlIdentifier;
 import org.springframework.cassandra.core.cql.generator.CreateUserTypeCqlGenerator;
@@ -53,7 +54,7 @@ public class App {
     {
         cassandraMappingContext = (CassandraMappingContext) context.getBean("context");
         cassandraConverter = (CassandraConverter) context.getBean("converter");
-        cluster = Cluster.builder().addContactPoints("127.0.0.1").withPort(9042).build();
+        cluster = Cluster.builder().addContactPoints("172.17.0.2").withPort(9042).build();
         final Session session = cluster.connect();
         session.execute(KEYSPACE_CREATION_QUERY);
         session.execute(KEYSPACE_ACTIVATE_QUERY);
@@ -110,8 +111,35 @@ public class App {
 
 
         adminTemplate.createTable(true, CqlIdentifier.cqlId(DATA_TABLE_NAME),
-                                                           User.class, new HashMap<String, Object>());
-        User user = new User(UUIDs.timeBased(), UUIDs.timeBased(),
+
+                User.class, new HashMap<String, Object>());
+
+
+        /*UUID userId = UUIDs.timeBased();
+        UUID userId1 = UUIDs.timeBased();
+
+        System.out.println(userId);
+        System.out.println(userId1);
+        User user = new User(userId, UUIDs.timeBased(),
+                "password", "firstName", "lastName");
+
+        User user1 = new User(userId1, UUIDs.timeBased(),
+                "password1", "firstName1", "lastName1");
+
+        UUID message1 = UUIDs.timeBased();
+        user1.addMessage(new Message(message1, user1.getUserId(), "kek", new Date()));
+        user.addMessage(new Message(message1, user1.getUserId(), "kek", new Date()));*/
+
+        /*template.insert(user);
+        template.insert(user1);*/
+       /* Select s = QueryBuilder.select("userMessages").from("users");
+        final Select select = QueryBuilder.select("userMessages").from("users").where(QueryBuilder.eq("user_id", user1)).orderBy();
+        final User getter = template.selectOne(select, User.class);
+        getter.getUserMessages().forEach(System.out::println);
+*/
+
+        /*UUID userTestId = UUIDs.timeBased();
+        User user = new User(userTestId, UUIDs.timeBased(),
                 "pass", "fst", "lst");
         template.insert(user);
 
@@ -126,8 +154,38 @@ public class App {
         System.out.println("done");
         if (new Scanner(System.in).nextLine().contains("exit")) {
             template.truncate("users");
+        }*/
+
+        Set<UUID> uuids = new HashSet<>();
+        for (int i = 0; i < 1000000; i++) {
+            UUID user_id = UUIDs.timeBased();
+            uuids.add(user_id);
+            UUID token = UUIDs.timeBased();
+            UUID comment_id = UUIDs.timeBased();
+            UUID article_id = UUIDs.timeBased();
+            UUID event_id = UUIDs.timeBased();
+            UUID community_id = UUIDs.timeBased();
+            UUID message_id = UUIDs.timeBased();
+
+            User user = new User(user_id, token,
+                    "password" + String.valueOf(i), "firstName" + String.valueOf(i), "lastName" + String.valueOf(i));
+
+            user.addComment(new Comment(comment_id, user_id, article_id, event_id, "text" + i));
+            user.addArticle(new Article(article_id, "title" + i, "publisher" + i, "text" + i));
+            user.addCommunity(new Community(community_id, "name" + i));
+            user.addEvent(new Event(event_id, user_id, "name" + i, "text" + i, "subj" + i));
+            Iterator<UUID> iter = uuids.iterator();
+            for (int j = 0; j < 100; j++) {
+                if (iter.hasNext()) {
+                    user.addFriend(iter.next());
+                }
+            }
+            user.addMessage(new Message(message_id, user_id, "text" + i, new Date()));
+            template.insert(user);
         }
+        System.out.println(666);
     }
+
 
     public static void main(String[] args) throws Exception {
 //        preload();

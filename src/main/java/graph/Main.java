@@ -29,27 +29,42 @@ public class Main {
 		Session session = sessionFactory.openSession();
 
 		// Create few courses
-		Community music = new Community();
+		/*Community music = new Community();
 		music.setName("music comm");
 
 		Community algo = new Community();
-		algo.setName("Advanced Algorithm");
+		algo.setName("Advanced Algorithm");*/
 
-		Community db = new Community();
-		db.setName("Database Internals");
+		Community o4 = new Community();
+		o4.setName("o4");
 
 		// Create few students
-		User alice = new User();
-		alice.setName("lol");
+		User kekich = new User();
+		kekich.setName("kekich");
 
-		User bob = new User();
-		bob.setName("kek");
+		User lolich = new User();
+		lolich.setName("lolich");
 
-		User carol = new User();
-		carol.setName("cheburek");
+		User cheburechich = new User();
+		cheburechich.setName("cheburechich");
 
+		kekich.getCommunities().add(o4);
+		o4.setUser(kekich);
+		lolich.getCommunities().add(o4);
+		o4.setUser(lolich);
+		cheburechich.getCommunities().add(o4);
+		o4.setUser(cheburechich);
+
+		kekich.addFriend(lolich);
+		lolich.addFriend(kekich);
+
+		kekich.addFriend(cheburechich);
+		cheburechich.addFriend(kekich);
+
+		cheburechich.addFriend(lolich);
+		lolich.addFriend(cheburechich);
 		// Add the courses
-		alice.getCommunities().add(music);
+		/*alice.getCommunities().add(music);
 		music.setUser(alice);
 		alice.getCommunities().add(algo);
 		alice.getCommunities().add(db);
@@ -59,12 +74,13 @@ public class Main {
 
 		carol.getCommunities().add(algo);
 		algo.setUser(carol);
-		carol.getCommunities().add(db);
+		carol.getCommunities().add(db);*/
 
 		// Persist the objects. Persisting students persists courses as well.
-		session.save(alice);
-		session.save(bob);
-		session.save(carol);
+		session.save(kekich);
+		session.save(lolich);
+		session.save(cheburechich);
+		session.save(o4);
 
 		// Retrieve Students who enrolled for Advanced Algorithm
 		Iterable<User> users = session.query(User.class,
@@ -72,9 +88,7 @@ public class Main {
 				Collections.emptyMap());
 
 		// Print all the Students
-		for (User user : users) {
-			System.out.println(user.getName());
-		}
+
 
         /*System.out.println("music");
 		for (User user : music.getUsers()) {

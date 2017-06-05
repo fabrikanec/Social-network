@@ -14,7 +14,7 @@ interface Operation {
 
 public class Commands {
     private static final String url = "127.0.0.1";
-    private static final Integer port = 27017;
+    private static final Integer port = 27000;
     private List<Operation> ops;
     private Jedis jedis = new Jedis(url);
     private EngineDBLibrary lib = new EngineDBLibrary(url, port);

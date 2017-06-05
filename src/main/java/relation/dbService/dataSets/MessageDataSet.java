@@ -26,16 +26,16 @@ import org.hibernate.engine.spi.SessionImplementor;
 @TypeDefs({
         @TypeDef(name = MessageDataSet.BoolType.NAME, typeClass = MessageDataSet.BoolType.class)
         })
-public class MessageDataSet implements Serializable { // Serializable Important to Hibernate!
+public class MessageDataSet implements Serializable {
     private static final long serialVersionUID = -8706689714326132798L;
 
     @Id
     @Column(name = "message_id", unique = true, updatable = false)
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long message_id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long messageId;
 
     @Column(name = "user_id")
-    private Long id;
+    private Long userId;
 
     @Column(name = "receaver_msg_deleted")
     @Type(type = BoolType.NAME)
@@ -51,14 +51,12 @@ public class MessageDataSet implements Serializable { // Serializable Important 
     @Column (name = "date")
     private Date date;
 
-    //Important to Hibernate!
-    @SuppressWarnings("UnusedDeclaration")
     public MessageDataSet() {
     }
 
-    public MessageDataSet(Long id, Boolean receaverMsgDeletedFlag, Boolean posterMsgDeletedFlag, String text, Date date) {
-        this.setId(id);
-        //this.setMessageId(message_id);
+    public MessageDataSet(Long userId, Boolean receaverMsgDeletedFlag, Boolean posterMsgDeletedFlag, String text, Date date) {
+        this.setId(userId);
+        //this.setMessageId(messageId);
         this.setReceaverMsgDeleted(receaverMsgDeletedFlag);
         this.setPosterMsgDeleted(posterMsgDeletedFlag);
         this.setText(text);
@@ -66,22 +64,21 @@ public class MessageDataSet implements Serializable { // Serializable Important 
     }
 
 
-    @SuppressWarnings("UnusedDeclaration")
 
     public Long getId() {
-        return id;
+        return userId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setId(Long userId) {
+        this.userId = userId;
     }
 
     public Long getMessageId() {
-        return message_id;
+        return messageId;
     }
 
-    public void setMessageId(Long message_id) {
-        this.message_id = message_id;
+    public void setMessageId(Long messageId) {
+        this.messageId = messageId;
     }
 
     public Boolean getReceaverMsgDeleated() {
@@ -110,8 +107,8 @@ public class MessageDataSet implements Serializable { // Serializable Important 
 
     public String toString() {
         return "MessageDataSet{" +
-                "id=" + id +
-                ", message_id='" + message_id + '\'' +
+                "id=" + userId +
+                ", message_id='" + messageId + '\'' +
                 '}';
     }
 
